@@ -1,0 +1,123 @@
+
+                    Call for Papers
+                         for
+                   Sixth Workshop on 
+     Language Descriptions, Tools and Applications
+
+                       LDTA 2006
+
+            A satellite event of ETAPS 2006
+            in Cooperation with ACM SIGPLAN
+      Saturday, April 1, 2006 in Vienna, Austria
+
+                http://ldta06.cs.umn.edu
+
+
+Scope:
+
+The aim of this one-day workshop is to bring together researchers from
+academia and industry interested in the field of formal language
+definitions and language technologies, with a special emphasis on
+tools developed for or with these language definitions. This active
+area of research involves the following basic technologies:
+
+  - Program analysis, transformation, and generation
+  - Formal analysis of language properties
+  - Automatic generation of language processing tools
+
+For example, language definitions can be augmented in a manner so that
+not only compilers or interpreters can be automatically generated but
+also other tools such as syntax-directed editors, debuggers, partial
+evaluators, test generators, documentation generators, etc. Although
+various specification formalisms like attribute grammars, action
+semantics, operational semantics, and algebraic approaches have been
+developed, they are not widely exploited in current practice.
+
+It is the aim of the LDTA workshops to bridge this gap between theory
+and practice. Among others, the following application domains can
+benefit from advanced language technologies:
+
+  - Software component models and modeling languages
+  - Re-engineering and re-factoring
+  - Aspect-oriented programming
+  - Domain-specific languages
+  - XML processing
+  - Visualization and graph transformation
+  - Programming environments such as Eclipse, .net, Rotor, SUN Java, etc.
+
+The workshop welcomes contributions on all aspects of formal language
+definitions, with special emphasis on applications and tools developed
+for or with these language definitions.
+
+
+Invited Speaker:
+
+The invited speaker for LDTA 2006 is Jean Bezivin, Universite de
+Nantes.
+
+
+Important Dates:
+
+ - Submission deadline:           December 1, 2005.
+ - Notification:                  January 16, 2006
+ - Final version due:             February 15, 2006
+ - Workshop:                      April 1, 2006
+
+
+Submission Procedure and Publication:
+
+Submission will be open from autumn 2005.  Two classes of papers are
+solicited: full-length research papers and short tool-demo papers.
+Tool-demo papers should contain a brief description of the tool and
+include a section that clearly explains what will be demonstrated.
+
+Full-length papers should be at most 15 pages in length and tool-demo
+papers should be at most 4 pages in length.  Both classes of papers
+should be submitted electronically as PostScript or PDF files to both
+of the program committee chairs, John Tang Boyland at
+Boyland@cs.uwm.edu and Tony Sloane at asloane@ics.mq.edu.au.  The
+message should also contain a text-only abstract and contact author
+information.
+
+Additional submission details, along with LaTeX style files, are
+available on the LDTA 2006 web page: \texttt{ldta06.cs.umn.edu}.  The
+final versions of accepted papers will be published in Electronic
+Notes in Theoretical Computer Science (ENTCS), Elsevier Science, and
+will be made available during the workshop.
+
+The authors of the best full-length papers will be invited to write a
+journal version of their paper which will be separately reviewed and,
+assuming acceptance, be published in journal form.  As in past years,
+this will be done in a a special issue devoted to LDTA 2006 of the
+journal Science of Computer Programming (Elsevier Science).
+
+
+Program Committee:
+
+ - Uwe Assmann, Dresden Technical University, Germany
+ - John Tang Boyland, University of Wisconsin-Milwaukee, USA
+   (co-chair), Boylan@cs.uwm.edu
+ - Jim Cordy, Queen's University, Canada
+ - Jan Heering, Centrum voor Wiskunde en Informatica (CWI), The
+    Netherlands 
+ - Nigel Horspool, University of Victoria, Canada
+ - Johan Jeuring, Utrecht University, The Netherlands
+ - Adrian Johnstone, Royal Holloway, University of London, UK
+ - Steven Klusener, Vrije Universiteit, The Netherlands
+ - David Lacey, University of Warwick, United Kingdom
+ - Brian Malloy, Clemson University, USA
+ - Paul Roe, Queensland University of Technology, Australia
+ - Michael Schwartzbach, BRICS, University of Aarhus, Denmark
+ - Tony Sloane, Macquarie University, Australia (co-chair),
+   asloane@ics.mq.edu.au 
+ - Yannis Smaragdakis, Georgia Institute of Technology, USA
+ - David Watt, University of Glasgow, Scotland
+ - David Wile, Teknowledge Corp, USA
+
+
+Organizing Committee:
+
+ - Eric Van Wyk, University of Minnesota, Minneapolis, USA,
+   evw@cs.umn.edu 
+ - Joost Visser, University of Minho, Braga, Portugal,
+   Joost.Visser@di.uminho.pt 

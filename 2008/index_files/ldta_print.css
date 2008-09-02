@@ -1,0 +1,199 @@
+/* general body style */
+html, body
+{   
+   margin: 0 auto;
+   height: 100%;
+      
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 62.5%; /*Sets all fonts to 10px*/ 
+  
+   
+   color: #000000; 
+}
+
+div#container 
+{
+	position: relative; /* needed for footer positioning*/
+	height: auto !important; /* real browsers */
+	height: 100%; /* IE6: treaded as min-height*/
+	min-height: 100%; /* real browsers */
+	width: 100%;
+	clear: both;
+
+	margin: 0 0 0 0;
+}
+
+h1 
+{
+   font-size: 4em;
+	margin:  auto;
+	padding: 0;
+}
+
+h2
+{
+	width: 50%;
+	margin-top: 5em;
+	margin-bottom: 0;
+	padding: 0  0.1em  0.5em 0;
+	border-bottom: 2px solid #000000;
+	
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.8em;
+   letter-spacing: 0.1em;
+   word-spacing: 0.2em;
+   text-align: right;
+   
+   color: #000000;       
+}
+
+ul.container_list
+{	  		
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.5em;  
+   color: #000000;
+   
+   width: 80%;
+   
+   margin: 1em auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   list-style-type: none; /*turns off display of bullet*/
+   border:none;
+
+}
+
+ul.container_list li
+{	  		
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif;  
+   color: #000000; 
+  
+   
+   margin: 0; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   list-style-type: none; /*turns off display of bullet*/
+   border:none;
+
+}
+
+
+ul.container_list li ul
+{
+   margin: 0; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+}
+
+
+
+ul.container_list li ul li
+{
+   /*white-space: nowrap;  */
+   display: inline;
+   font-family: verdana, Geneva, Arial, sans-serif; 
+   font-weight: normal;
+   letter-spacing: 0.1em;
+   
+   color: #000000;
+}
+
+ul.container_list li ul li:first-child
+{
+   display: inline;
+   font-family: verdana, Geneva, Arial, sans-serif; 
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   
+   color: #000000;
+}
+
+ul.container_list li ul li:first-child a
+{
+   font-weight: normal;
+   text-decoration: none;
+   color: #000000;
+}
+
+ul.container_list li ul li:first-child a:hover
+{
+   font-weight: normal;
+   text-decoration: none;
+   color: #000000;
+}
+
+
+ul.simple_list
+{	  		
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 1em;  
+   color: #000000;
+   
+   list-style-type: square;
+   margin: 1 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   border:none;
+
+}
+
+ul.simple_list li
+{	  		
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif;  
+   color: #30404f;
+   font-size: 1em;  
+  
+   
+   margin: 0 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   border:none;
+
+}
+
+
+ul.simple_list li a
+{
+   font-weight: bold;
+   text-decoration: none;
+   color: #000000;
+   font-size: 1em; 
+}
+
+ul.simple_list li a:hover
+{
+   font-weight: bold;
+   text-decoration: underline;
+   color: #000000;
+}
+
+
+
+div.content
+{
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.5em;  
+   color: #000000;
+   width: 80%;
+   margin: 2em auto 0 auto;  
+   text-align: justify; 
+   letter-spacing: 0.1em;
+   line-height: 1.8em;
+
+}
+
+div.content a
+{
+   color: #000000;
+   text-decoration: none;
+}
+
+div#footer
+{
+	clear: both;
+	bottom: 0; /* stick to bottom */
+	font-size: 2.5em; 
+	width: 50%;
+	margin: 5em auto 0 auto;
+	height: 30px;
+}
+
+div#footer span
+{
+	display: none;
+}

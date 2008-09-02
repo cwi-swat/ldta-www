@@ -1,0 +1,320 @@
+<HTML>
+<!--This file created 04-03-04 10.23 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>LDTA 2004 Proceedings</TITLE>
+   <META NAME=GENERATOR CONTENT="Claris Home Page 3.0">
+   <X-CLARIS-WINDOW TOP=58 BOTTOM=733 LEFT=330 RIGHT=860>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1>LDTA 2004 Proceedings</H1>
+
+<P>&nbsp;</P>
+
+<P><A HREF="LDTA2004Proceedings.tgz">The entire proceedings as a tgz
+file</A>.</P>
+
+<P><A HREF="d01_title.pdf"><B>Titlepages</B></A></P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Cordy></A><A HREF="d02_Cordy.pdf">TXL - A Language for
+Programming Language Tools and Applications</A>. <I>Jim
+Cordy</I></H3>
+
+<P>TXL is a special-purpose programming language designed for
+creating, manipulating and rapidly prototyping language descriptions,
+tools and applications. TXL is designed to allow explicit programmer
+control over the interpretation, application, order and backtracking
+of both parsing and rewriting rules. Using first order functional
+programming at the higher level and term rewriting at the lower
+level, TXL provides for flexible programming of traversals,
+strategies, guards, scope of application and parameterized context.
+This flexibility has allowed TXL users to express and experiment with
+both new ideas in parsing, such as robust, island and agile parsing,
+and new paradigms in rewriting, such as XML markup, rewriting
+strategies and contextualized rules, without any change to TXL
+itself. In this paper I outline the history, evolution and concepts
+of TXL with emphasis on what makes it different from other language
+manipulation tools, and give examples of its use in expressing and
+applying recent new paradigms in language processing.</P>
+
+<P>Key words: source transformation, term rewriting, grammars</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Goldrei></A><A HREF="d03_GoldreiSloane.pdf">Using
+Off-the-Shelf Formal Methods to Verify Attribute Grammar
+Properties</A>. <I>Shirley Goldrei and Anthony Sloane</I></H3>
+
+<P>Attribute Grammars are the specification language of many tools
+that automatically generate programming language implementations. We
+consider the problem of verifying properties of attribute grammar
+specifications, particularly properties that are not well supported
+by existing tools. Rather than propose methods for extending existing
+tool implementation techniques, we propose the use of off-the-shelf
+formal methods tools as the basis for attribute grammar verification.
+Off-the-shelf tools can provide significant expressive power at a
+much lower cost than extending an existing evaluator generator. As a
+specific example, we describe how to use the Alloy model finding and
+checking tool to verify properties of remote attribution constructs
+in the LIDO attribute grammar specification language. A naive
+application of this approach has significant performance overheads;
+we discuss techniques for limiting the scope of the problems that are
+solved to make the approach tractable.</P>
+
+<P>Key words: Compiler generation, attribute grammars, formal
+methods, software verification.</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Gradara></A><A HREF="d04_Gradara.pdf">Model Checking
+Multithreaded Programs by Means of Reduced Models</A>. <I>Sara
+Gradara, Antonella Santone, Gigliola Vaglini, Maria Luisa
+Villani</I></H3>
+
+<P>Java is largely used to develop distributed and concurrent
+systems, but testing multithreaded systems cannot guarantee the
+quality of the software; in contrast, verification techniques give us
+a higher confidence about the system and, among these, model checking
+methods automatically establish properties of complex systems. Such
+techniques are usually applied to specification languages, and
+several environments exist to verify temporal properties of
+concurrent specifications. In this paper we present an attempt to
+apply model checking techniques for verifying a subset of
+multithreaded Java programs. In particular, we use a tool based on
+the selective mu-calculus logic to check systems described through
+the CCS specification language.</P>
+
+<P>Key words: state explosion, model checking, CCS, Java.</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Tavernier></A><A HREF="d05_Tavernier.pdf">Calife: a
+Generic Graphical User Interface for Automata Tools</A> (Tool
+Demonstration). <I>Bertrand Tavernier</I></H3>
+
+<P>The Calife v3.0 platform is an environment developed under the GPL
+licence (freely downloadable at <A HREF="http://calife.criltechnology.com">http://calife.criltechnology.com</A>)
+allowing the specification and formal validation of systems described
+as synchronized product of automata.</P>
+
+<P>The goal is not to provide another verification tool, but to
+interface (all?) ex- isting tools working on automata in a unique
+environment. Tools can be grouped using model definition associated
+with automata classes.</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Begel></A><A HREF="d06_BegelGraham.pdf">Language Analysis
+and Tools for Ambiguous Input Streams</A>. <I>Andrew Begel and Susan
+L. Graham</I></H3>
+
+<P>Automatically generated lexers and parsers for programming
+languages have a long history. Although they are well-suited for many
+languages, many widely-used generators, among them Flex and Bison,
+fail to handle input stream ambiguities that arise in embedded
+languages, in legacy languages, and in programming by voice. We have
+developed Blender, a combined lexer and parser generator that enables
+designers to describe many classes of embedded languages and to
+handle ambiguities in spoken input and in legacy languages. We have
+enhanced the incremental lexing and parsing algorithms in our
+Harmonia framework to analyze lexical, syntactic and semantic
+ambiguities. The combination of better language description and
+enhanced analysis provides a powerful platform on which to build the
+next generation of language analysis tools.</P>
+
+<P>Key words: GLR, embedded languages, Harmonia,
+programming-by-voice</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Johnstone></A><A HREF="d07_Johnstone.pdf">The Grammar
+Tool Box: a case study comparing GLR parsing algorithms</A>.
+<I>Adrian Johnstone, Elizabeth Scott, Giorgios Economopoulos</I></H3>
+
+<P>The Grammar Tool Box is a toolset for manipulating Context Free
+Grammars and objects associated with them such as parsers, languages
+and derivations. GTB has three main roles: as a pedagogic tool; as an
+experimental platform for novel algorithms and representations; and
+as a production tool for translator front end generation. In this
+paper we give an overview of GTB and its companion Javabased animator
+tool PAT. We illustrate the use of the toolset in the construction of
+a comparative study of three variants of the Tomita-style GLR parsing
+algorithm running on LR(0), SLR(1) and LR(1) tables for ANSI-C,
+ISO-Pascal and IBM VSCOBOL, and give results showing the size of the
+structures constructed by these parsers and the amount of searching
+required during the parse, which abstracts their runtime.</P>
+
+<P>Key words: GLR parsing, grammar types, context free languages</P>
+
+<H3>
+
+<HR>
+
+</H3>
+
+<H3><A NAME=JohnstoneTool></A><A HREF="d08_Johnstone_tool.pdf">The
+GTB and PAT tools</A> (Tool Demonstration). <I>Adrian Johnstone,
+Elizabeth Scott, Giorgios Economopoulos</I></H3>
+
+<P>The Grammar Tool Box is a toolset for manipulating Context Free
+Grammars and objects associated with them such as parsers, languages
+and derivations. GTB has three main roles: as a pedagogic tool; as an
+experimental platform for novel algorithms and representations; and
+as a production tool for translator front end generation. In this
+tool demonstration we give an overview of GTB and its companion
+Java-based animator tool PAT.</P>
+
+<P>Key words: Parsing, software animation</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Thiemann></A><A HREF="d09_TheimannNeubauer.pdf">Parameterized
+LR Parsing</A>. <I>Peter Thiemann, Matthias Neubauer</I></H3>
+
+<P>Common LR parser generators lack abstraction facilities for
+defining recurring patterns of productions. Although there are
+generators capable of supporting regular expressions on the right
+hand side of productions, no generator supports user defined patterns
+in grammars.</P>
+
+<P>Parameterized LR parsing extends standard LR parsing technology by
+admitting grammars with parameterized non-terminal symbols. A
+generator can implement such a grammar in two ways, either by
+expansion or directly. We develop the theory required for the direct
+implementation and show that it leads to significantly smaller parse
+tables and that it has fewer parsing conflicts than the expanded
+grammar. Attribute evaluation for a parameterized non-terminal is
+possible in the same way as before, if the semantic functions related
+to the non-terminal are polymorphic with respect to the
+parameter.</P>
+
+<P>We have implemented parameterized LR parsing in the context of
+Essence, a partial-evaluation based LR parser generator for
+Scheme.</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Lohmann></A><A HREF="d10_Lohmann.pdf">Semantics-preserving
+migration of semantic rules after left recursion removal in attribute
+grammars</A>. <I>Wolfgang Lohmann, G&uuml;nter Riedewald, Markus
+Stoy</I></H3>
+
+<P>Several tools for source-to-source transformation are based on top
+down parsers. This restricts the user to use grammars without left
+recursion. Removing left recursion of a given grammar often makes it
+unreadable, preventing a user from concentrating on the original
+grammar. Additionally, the question arises, whether the tool
+implements the semantics of the original language, if it is
+implemented based on a different grammar than in the original
+language definition. Moreover, existing implementations of semantics
+for the original grammar cannot be reused directly.</P>
+
+<P>The paper contributes to the field of automatic migration of
+software (here semantic rules) induced by a grammar change. It
+revises removal of left recursion in the context of grammar
+adaptations and demonstrates, that during automatic removal of left
+recursion at the same time the semantic rules can be migrated. Thus,
+a programmer can continue to use semantic rules on a left recursive
+grammar. The problem is explained and justified.</P>
+
+<P>Key words: grammar engineering, grammar adaptation, attribute
+grammar, migration of semantic rules, transformation, parsing</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=Brand></A><A HREF="d11_vandenBrand.pdf">An Action
+Environment</A>. <I>Mark van den Brand, J&oslash;rgen Iversen, Peter
+D. Mosses</I></H3>
+
+<P>Some basic programming constructs (e.g., conditional statements)
+are found in many different programming languages, and can often be
+included without change when a new language is designed. When writing
+a semantic description of a language, however, it is usually not
+possible to reuse parts of previous descriptions without change.</P>
+
+<P>This paper introduces a new formalism, ASDF, which has been
+designed specifically for giving reusable action semantic
+descriptions of individual language constructs. An initial case study
+in the use of ASDF has already provided reusable descriptions of all
+the basic constructs underlying Core ML.</P>
+
+<P>The paper also describes the Action Environment, a new environment
+supporting use and validation of ASDF descriptions. The Action
+Environment has been implemented on top of the ASF+SDF
+Meta-Environment, exploiting recent advances in techniques for
+integration of different formalisms, and inheriting all the main
+features of the Meta-Environment.</P>
+
+<P>Key words: ASF+SDF, ASDF, action semantics, modularity, reuse,
+language environment</P>
+
+<P>
+
+<HR>
+
+</P>
+
+<H3><A NAME=BrandTool></A><A HREF="d12_vandenBrand_tool.pdf">The
+Action Environment</A> (Tool Demonstration). <I>Mark van den Brand,
+J&oslash;rgen Iversen, Peter D. Mosses</I></H3>
+
+<P>When writing semantic descriptions of programming languages it is
+highly desirable to reuse descriptions of constructs from previous
+language descriptions. This is usually not possible without
+adaptations, due to the lacking modularity of the formalism used. In
+&#91;3&#93; Doh and Mosses proposed organizing language descriptions
+such that each construct is described in a separate module, which
+promotes reuse. They used Action Semantics &#91;5&#93; and ASF+SDF
+&#91;4&#93; as description language, but experience showed that the
+notation was too cumbersome, so we developed the ASDF language, which
+is tailor-made for writing action semantic descriptions (ASDs) of
+single language constructs. Here we will demonstrate an environment
+which supports working with ASDF modules.</P>
+
+<P>&nbsp;
+
+<HR>
+
+</P>
+
+<P>Last update: Thursday, 04-Mar-2004 12:51:16 CET</P>
+</BODY>
+</HTML>

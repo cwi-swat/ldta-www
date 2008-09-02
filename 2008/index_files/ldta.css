@@ -1,0 +1,248 @@
+/* general body style */
+html, body
+{   
+   background-color: #93b3d2; 
+
+   margin: 0 auto;
+   height: 100%;
+      
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 62.5%; /*Sets all fonts to 10px*/ 
+  
+  line-height: 3em;
+   
+   color: #30404f; 
+}
+
+div#container 
+{
+	position: relative; /* needed for footer positioning*/
+	height: auto !important; /* real browsers */
+	height: 100%; /* IE6: treaded as min-height*/
+	min-height: 100%; /* real browsers */
+	width: 100%;
+	clear: both;
+
+	margin: 0 0 0 0;
+}
+
+div#head
+{
+   background-image: url(../images/head-background.gif);
+  	background-repeat: repeat-x;
+   height: 186px;
+}
+
+div#separator
+{  
+   padding: 0;
+   margin: 0;
+   background-image: url(../images/head-body-separator.gif);
+  	background-repeat: repeat-x;
+   height: 7px;
+}
+
+
+
+h1 
+{
+	background-image: url(../images/logo.gif);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 186px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 span 
+{
+	display: none;
+}
+
+h2
+{
+	background: #ffffff;
+	width: 45%;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	padding: 0.5em  0.7em  0.5em  0.5em;
+	border-bottom: 1px solid #6b8185;
+	border-right: 1px solid #6b8185;
+	
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.1em;
+   letter-spacing: 0.1em;
+   word-spacing: 0.2em;
+   text-align: right;
+   
+   color: #30404f;       
+}
+
+ul.container_list
+{	  		
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.1em;  
+   color: #30404f;
+   
+   width: 50%;
+    
+   margin: 0 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   list-style-type: none; /*turns off display of bullet*/
+   border:none;
+
+}
+
+ul.container_list li
+{	  		
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif;  
+   color: #30404f; 
+  
+   
+   margin: 0 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   list-style-type: none; /*turns off display of bullet*/
+   border:none;
+
+}
+
+
+ul.container_list li a
+{
+   font-weight: bold;
+   text-decoration: none;
+   color: #ffffff;
+}
+
+ul.container_list li a:hover
+{
+   font-weight: bold;
+   text-decoration: underline;
+   color: #ffffff;
+}
+
+
+ul.container_list li ul
+{
+   margin: 0 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+}
+
+
+
+ul.container_list li ul li
+{
+   /*white-space: nowrap;  */
+   display: inline;
+   font-family: verdana, Geneva, Arial, sans-serif; 
+   font-weight: normal;
+   letter-spacing: 0.1em;
+   
+   color: #30404f;
+}
+
+ul.container_list li ul li:first-child
+{
+   display: inline;
+   font-family: verdana, Geneva, Arial, sans-serif; 
+   font-weight: bold;
+   letter-spacing: 0.1em;
+     
+   color: #30404f;
+}
+
+ul.container_list li ul li:first-child a
+{
+   font-weight: bold;
+   text-decoration: none;
+   color: #ffffff;
+}
+
+ul.container_list li ul li:first-child a:hover
+{
+   font-weight: bold;
+   text-decoration: underline;
+   color: #ffffff;
+      
+}
+
+
+ul.simple_list
+{	  		
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 1em;  
+   color: #30404f;
+   list-style-type: square;
+   margin: 1 auto; /*removes indent IE and Opera*/
+   padding: 0; /*removes indent Mozilla and NN7*/
+   border:none;
+}
+
+ul.simple_list li
+{	  		
+   font-family: Tahoma, Verdana, Geneva, Arial, sans-serif;  
+   color: #30404f;
+   font-size: 1em;  
+}
+
+
+ul.simple_list li a
+{
+   font-weight: bold;
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 1em; 
+}
+
+ul.simple_list li a:hover
+{
+   font-weight: bold;
+   text-decoration: underline;
+   color: #ffffff;
+}
+
+
+
+
+
+div.content
+{
+	font-family: Tahoma, Verdana, Geneva, Arial, sans-serif; 
+   font-size: 2.3em;  
+   color: #30404f;
+   width: 50%;
+   margin: 2em auto 0 auto;  
+   text-align: justify; 
+   letter-spacing: 0.1em;
+   line-height: 1.8em;
+
+}
+
+div.content a
+{
+   color: #ffffff;
+   text-decoration: underline;
+}
+
+div.content a:hover
+{
+   color: #30404f;
+   text-decoration: none;
+}
+
+div#footer
+{
+	clear: both;
+	bottom: 0; /* stick to bottom */
+	width: 50%;
+	margin: 5em auto 0 auto;
+	height: 30px;
+	background-image: url(../images/cadesign.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+div#footer span
+{
+	display: none;
+}
