@@ -97,7 +97,7 @@ def callForPapers
 
  p "This is the Call For Papers for the Ninth Workshop on Language Descriptions, Tools and Applications (LDTA 2009)";
 
- p "LDTA is a two-day satellite event of ETAPS which takes place between 22 and 29 March 2009 in York, England.";
+ p "LDTA is a two-day satellite event of ETAPS which takes place between on the 28th and 29th March 2009 in York, England.";
 
  h2 "Scope";
 
