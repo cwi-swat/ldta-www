@@ -93,7 +93,6 @@ end
 
 def callForPapers
  section("Call For Papers 2009") { 
- subtitle("this is a draft of the Cfp for 2009");
 
  p "This is the Call For Papers for the Ninth Workshop on Language Descriptions, Tools and Applications (LDTA 2009)";
 
