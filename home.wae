@@ -145,7 +145,8 @@ ul {
 }
 
 p {
-  echo "The final versions of accepted papers will be published in Electronic Notes in Theoretical Computer Science (ENTCS), Elsevier Science, and will be made available during the workshop.";
+  echo "The final versions of accepted papers will probably(*) be published in Electronic Notes in Theoretical Computer Science (ENTCS), Elsevier Science, and will be made available during the workshop. (*) Due to organizational changes at Elsevier, publication by ENTCS publication is provisional; another comparable venue will be found otherwise.";
+  br;
   br;
   echo "Each submission must:";
 ul {
@@ -154,7 +155,7 @@ ul {
  li "contain a clear motivation,";
  li "contain a thorough analysis of the claimed contributions (for example by comparing to related work),";
  li "be written in less than 15 pages (research papers and experience reports), or less than 10 pages (tool papers)";
- li { echo "use the "; a(href="http://www.entcs.org/generic.tar.gz") "ENTCS style."; }
+ li { echo "use the "; a(href="http://www.entcs.org/files/etaps09/ldta/prentcsmacro.sty") "ENTCS style."; }
 }
 
 p "The authors of each submission are required to give a presentation at LDTA 2009. The authors of the tool papers are required to include an interactive demonstration in their presentations.";
