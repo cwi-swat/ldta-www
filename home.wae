@@ -9,11 +9,11 @@ def css(url, media)
 end
 
 def workshop(year,location)
-  a(href="<year>/index.html") "<year> <location>";
+  a(href= year + "/index.html") "<year> <location>";
 end
 
 def sciencedirect(issn, volume, issue, year) 
-  a(href="http://www.sciencedirect.com/science/publication?issn=<issn>&amp;volume=<volume>&amp;issue=<issue>") year;
+  a(href="http://www.sciencedirect.com/science/publication?issn=" + issn + "&amp;volume=" + volume + "&amp;issue=" + issue) year;
 end
 
 def entcs(volume, issue, year)
@@ -39,6 +39,7 @@ def previous
           li workshop("2008","Budapest"); 
           li workshop("2009","York");
      }
+     br;
      h2 "Proceedings";
      ul {
           li {
@@ -50,13 +51,14 @@ def previous
            sp; entcs("164","2", 2006);
            br; entcs("203","2", 2007);
            sp; echo "2008"; 
+           sp; echo "2009"; 
          }
      }
+     br; 
      h2 "Tentative Deadlines";
      ul {
-       li "Abstracts Nov 28th, 2008";
-       li "Papers Dec 5th, 2008";
-       li "Notification Feb 6th, 2009";
+       li "Submissions Nov 13th, 2009";
+       li "Notifications Dec 20th, 2009";
      }
 
     
@@ -70,27 +72,44 @@ def relatedLinks
      h2 "Authors";
      ul {
           li a(href="http://www.easychair.org/conferences/?conf=ldta2009",info="Use this link to submit a paper when it becomes available") "Submit";
-          li a(href="notyetavailable",info="Use this link to register for ETAPS when it becomes available") "Register";
+          li a(href="#", style="cursor: help;", title="Use this link to register for ETAPS when it becomes available") "Register";
      }
    }
    li {
      h2 "Organizers";
      ul {
           li a(href="http://organisation.ldta.info") "Wiki";
-          li a(href="http://www.easychair.org/conferences/?conf=ldta2009") "EasyChair";
+          li a(href="#", style="cursor: help;", title="Use this link to submit papers when it becomes available") "EasyChair";
      }
    }
    li {
      h2 "ETAPS";
      ul {
-       li a(href="http://www.cs.york.ac.uk/etaps09/") "Site";
-       li a(href="http://www.york.gov.uk/visiting/") "Visiting York";
-       li a(href="notavailable") "Registration";
+       li a(href="http://www.etaps10.cs.ucy.ac.cy/") "Website";
+       li a(href="http://www.visitcyprus.com") "Visiting Cyprus";
+       li a(href="#", style="cursor: help;", title="Use this link to register for ETAPS when it becomes available") "Registration";
      }
    }
  }
 end
 
+def content
+    p {
+      echo "LDTA 2010 is a two-day satellite event of ";
+      a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; 
+      echo " that will take place between the 20th and the 28th March 2010 in Paphos, Cyprus.";
+    }
+
+    scope();
+
+  //news();
+  //callForPapers();
+end
+
+def news
+  section("News") {
+  }
+end
 
 def callForPapers
  section("Call For Papers 2009") { 
@@ -99,41 +118,7 @@ def callForPapers
 
  p "LDTA is a two-day satellite event of ETAPS which takes place between on the 28th and 29th March 2009 in York, England.";
 
- h2 "Scope";
-
- p {
-  echo "LDTA is an application and tool oriented forum on meta programming in a broad sense. A meta program is a program that takes other programs as input or output. The focus of LDTA is on generated or otherwise efficiently implemented meta programs, possibly using high level descriptions of programming languages. Tools and techniques presented at LDTA are usually applicable in the context of \"Language Workbenches\" or \"Meta Programming Systems\" or simply as parts of advanced programming environments or IDEs. The applications areas include, but are not limited to:";
-  ul {
- li "Program analysis, transformation, generation and verification";
- li "Implementation of Domain Specific Languages (both visual and textual)";
- li "Reverse engineering and reengineering";
- li "Refactoring and other source-to-source transformations";
- li "Application modelling (MDE, MDA, Software Factories, Software product lines)";
- li "Grammar engineering / Grammarware";
- li "Language definition and language prototyping";
- li "Debugging, profiling and testing";
- li "IDE construction";
- li "Compiler construction";
- }
- }
-
- p {
-   echo "LDTA is a well-established workshop next to other conferences and workshops on (programming) language engineering topics such as ";
-   a(href="http://planet-mde.org/sle2008/") "SLE"; 
-   echo " and ";
-   a(href="http://www.gpce.org") "GPCE";
-   echo ".";
-   echo "LDTA is traditionally a forum where computer science theories are put to the test of real-world software engineering issues, for example by applying:";
-  ul {
- li "context-free grammars to parser generation for real programming languages,";
- li "attribute grammars to static analyzer and compiler generation,";
- li "term rewriting to source-to-source transformation,";
- li "action semantics to programming language implementation,";
- li "model checking to software verification.";
- }
-
- echo "Note that LDTA solicits submissions from any technological or theoretical domain, as long as the paper is within the application scope.";
- }
+  scope();
 
 h2 "Submission Procedure and Publication";
 
@@ -169,6 +154,7 @@ p {
   echo "Please submit your abstract and paper using ";
   a(href="http://www.easychair.org/conferences/?conf=ldta2009") "http://www.easychair.org/conferences/?conf=ldta2009" ;
 }
+
 
 h2 "Program Committee";
 
@@ -208,6 +194,44 @@ h2 "Important Dates";
  }}
 end
 
+def scope
+ h2 "Scope";
+
+ p {
+  echo "LDTA is an application and tool oriented forum on meta programming in a broad sense. A meta program is a program that takes other programs as input or output. The focus of LDTA is on generated or otherwise efficiently implemented meta programs, possibly using high level descriptions of programming languages. Tools and techniques presented at LDTA are usually applicable in the context of \"Language Workbenches\" or \"Meta Programming Systems\" or simply as parts of advanced programming environments or IDEs. The applications areas include, but are not limited to:";
+  ul {
+ li "Program analysis, transformation, generation and verification";
+ li "Implementation of Domain Specific Languages (both visual and textual)";
+ li "Reverse engineering and reengineering";
+ li "Refactoring and other source-to-source transformations";
+ li "Application modelling (MDE, MDA, Software Factories, Software product lines)";
+ li "Grammar engineering / Grammarware";
+ li "Language definition and language prototyping";
+ li "Debugging, profiling and testing";
+ li "IDE construction";
+ li "Compiler construction";
+ }
+ }
+
+ p {
+   echo "LDTA is a well-established workshop next to other conferences and workshops on (programming) language engineering topics such as ";
+   a(href="http://planet-sl.org/sle2009/") "SLE"; 
+   echo " and ";
+   a(href="http://www.gpce.org") "GPCE";
+   echo ". ";
+   echo "LDTA is traditionally a forum where computer science theories are put to the test of real-world software engineering issues, for example by applying:";
+  ul {
+ li "context-free grammars to parser generation for real programming languages,";
+ li "attribute grammars to static analyzer and compiler generation,";
+ li "term rewriting to source-to-source transformation,";
+ li "action semantics to programming language implementation,";
+ li "model checking to software verification.";
+ }
+
+ echo "Note that LDTA solicits submissions from any technological or theoretical domain, as long as the paper is within the application scope.";
+ }
+
+end
 
 def parTitle(title)
  h1.title title;
@@ -249,7 +273,7 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
          previous;
         }
 
-      div#content div.bgtop div.bgbtm div.post callForPapers();
+      div#content div.bgtop div.bgbtm div.post content();
       
 
     div.sidebar#sidebar2 {

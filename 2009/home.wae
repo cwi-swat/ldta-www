@@ -9,11 +9,11 @@ def css(url, media)
 end
 
 def workshop(year,location)
-  a(href="<year>/index.html") "<year> <location>";
+  a(href= "../" + year + "/index.html") "<year> <location>";
 end
 
 def sciencedirect(issn, volume, issue, year) 
-  a(href="http://www.sciencedirect.com/science/publication?issn=<issn>&amp;volume=<volume>&amp;issue=<issue>") year;
+  a(href="http://www.sciencedirect.com/science/publication?issn=" + issn + "&amp;volume=" + volume + "&amp;issue=" + issue) year;
 end
 
 def entcs(volume, issue, year)
@@ -51,7 +51,7 @@ def previous
            sp; echo "2008"; 
          }
      }
-     h2 "Tentative Deadlines";
+     h2 "Deadlines";
      ul {
        li "Abstracts Nov 28th, 2008";
        li "Papers Dec 5th, 2008";
@@ -69,7 +69,8 @@ def relatedLinks
      h2 "Authors";
      ul {
           li a(href="http://www.easychair.org/conferences/?conf=ldta2009",info="Use this link to submit a paper when it becomes available") "Submit";
-          li a(href="notyetavailable",info="Use this link to register for ETAPS when it becomes available") "Register";
+          li a(href="http://www.cs.york.ac.uk/etaps09/Venue/registration-frame.html") "Register";
+          li a(href="program2009.pdf") "Program";
      }
    }
    li {
@@ -84,19 +85,69 @@ def relatedLinks
      ul {
        li a(href="http://www.cs.york.ac.uk/etaps09/") "Site";
        li a(href="http://www.york.gov.uk/visiting/") "Visiting York";
-       li a(href="notavailable") "Registration";
+       li a(href="http://www.cs.york.ac.uk/etaps09/Venue/registration-frame.html") "Registration";
      }
    }
  }
 end
 
 
+def content 
+  news();
+  callForPapers();
+end
+
+
+def news
+  section("News") {
+  ul {
+    li {
+      echo "Please find the pre-proceedings "; 
+      a(href="ldta2009proceedings.pdf") "here"; 
+      echo ".";
+    }
+    li {
+      echo "We are very happy to announce that ";
+      b "Don Syme";
+      echo " will be the invited speaker at LDTA 2009. His invited talk is tentatively titled \"An Overview of Language Oriented Programming in F# - from ML to Monads to Reflective Schema Compilation\"."; 
+      br; 
+      echo "Don Syme is a Senior Researcher at Microsoft Research, Cambridge, and is the lead architect on the F# programming language. He is known for his work in bridging academic language research and industrial practice through .NET Generics and F#.";
+    }
+    li {
+      echo "LDTA 2009 is organized in cooperation with "; a(href="http://www.sigplan.org/") "ACM Sigplan"; echo "."; }
+    li "We thank Eric Van Wyk and the University of Minnesota Software Engineering Center for organizational support.";
+    li { echo "The LDTA 2009 proceedings will be published in "; a(href="http://www.entcs.org") "ENTCS"; echo ".";}
+    li { echo "The LDTA "; a(href="program2009.pdf") "program"; echo " is available, with the following list of accepted papers:";}
+	        
+    ul {
+      li "T. Sloane, L. C. L. Kats and E. Visser. A Pure Object-Oriented Embedding of Attribute Grammars.";
+      li "J. Andersen and C. Brabrand. Syntactic Language Extension via an Algebra of Languages and Transformations.";
+      li "T. Clark and L. Tratt. Formalizing Homogeneous Language Embeddings.";
+      li "A. Riesco and J. Rodriguez-Hortala. A natural implementation of Plural Semantics in Maude. (demonstration)";
+      li "E. Scott and A. Johnstone. GLL Parsing.";
+      li "Y. Mandelbaum and T. Jim. Efficient Earley Parsing with Regular Right-hand Sides.";
+      li "J. Boyland and D. Spiewak. ScalaBison: Recursive Ascent-Descent Parser Generator. (demonstration)";
+      li "T. Allwood and S. Eisenbach. Strengthening the Zipper.";
+      li "A. Baars, D. Swierstra and M. Viera. Typed Transformations of Typed Grammars: The Left Corner Transform.";
+      li "M. Sackman and S. Eisenbach. Safely Speaking in Tongues.";
+      li "M. Herrmannsdoerfer and B. Hummel. Library Concepts for Model Reuse.";
+      li "L. Engelen and M.G.J. van den Brand. Integrating textual and graphical modelling languages.";
+      li "L. C. L. Kats, K. T. Kalleberg and E. Visser. Domain-Specific Languages for Composable Editor Plugins.";
+      li "J. Singer, G. Brown, M. Lujan, A. Pocock and P. Yiapanis. Fundamental Nano-Patterns to Characterize and Classify Java Methods.";
+      li "J. Dennis, E. Jessup and W. Waite. SLAMM - Automating Memory Analysis for Numerical Algorithms.";
+      li "A. H. Bagge and M. Haveraaen. Interfacing Concepts: Why Declaration Style Shouldn't Matter.";
+    }
+  }
+}
+end
+
 def callForPapers
  section("Call For Papers 2009") { 
 
  p "This is the Call For Papers for the Ninth Workshop on Language Descriptions, Tools and Applications (LDTA 2009)";
 
- p "LDTA is a two-day satellite event of ETAPS which takes place between on the 28th and 29th March 2009 in York, England.";
+ p { a(href="http://ldta.info") "LDTA"; echo " is a two-day satellite event of "; a(href="http://www.cs.york.ac.uk/etaps09/") "ETAPS"; echo " which takes place on the 28th and 29th March 2009 in York, England.";
+ }
 
  h2 "Scope";
 
@@ -200,7 +251,7 @@ h2 "Important Dates";
  tr { td b "Abstract submission deadline:"; td "Friday November 28th, 2008"; }
  tr { td b "Paper submission deadline:";    td "Friday December 5th, 2008"; }  
  tr { td b "Notification of acceptance:";   td "Friday February 6th, 2009" ; } 
- tr { td b "Workshop date:" ;               td "20th March 20th, 2009 (tentative)" ; }  
+ tr { td b "Workshop date:" ;               td "28th and 29th March, 2009" ; }  
  }
 
   }
@@ -248,7 +299,7 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
          previous;
         }
 
-      div#content div.bgtop div.bgbtm div.post callForPapers();
+      div#content div.bgtop div.bgbtm div.post content();
       
 
     div.sidebar#sidebar2 {
