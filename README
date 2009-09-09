@@ -1,5 +1,8 @@
 This site's index.html is generated from home.wae, which is a Waebric
-script. Waebric can be downloaded soon from www.meta-environment.org.
+script. Waebric can be downloaded from http://code.google.com/p/waebric/.
+
+To run the script and generate the html type the following:
+  ./waebric home.wae >index.html
 
 This site's css is a creative commons public domain css, slightly adapted by me to include the LDTA top logo and to remove the dog paws that were a topic in this css.
 
@@ -9,4 +12,4 @@ call for papers instead, as retrieved from an arbitrary mailing list archive.
 
 Cheers,
 
-Jurgen Vinju
+Jurgen Vinju & Rob Economopoulos

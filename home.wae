@@ -38,6 +38,7 @@ def previous
           li workshop("2007","Braga");
           li workshop("2008","Budapest"); 
           li workshop("2009","York");
+          li a(href="index.html") "2010 Paphos";
      }
      br;
      h2 "Proceedings";
@@ -55,10 +56,11 @@ def previous
          }
      }
      br; 
-     h2 "Tentative Deadlines";
+     h2 "Deadlines";
      ul {
-       li "Submissions Nov 13th, 2009";
-       li "Notifications Dec 20th, 2009";
+       li "Abstracts: Nov 27, 2009";
+       li "Papers: Dec 04, 2009";
+       li "Notifications: Feb 05, 2010" ; 
      }
 
     
@@ -71,7 +73,7 @@ def relatedLinks
    li { 
      h2 "Authors";
      ul {
-          li a(href="http://www.easychair.org/conferences/?conf=ldta2009",info="Use this link to submit a paper when it becomes available") "Submit";
+          li a(href="http://www.easychair.org/conferences/?conf=ldta2009",onfocus="Use this link to submit a paper when it becomes available") "Submit";
           li a(href="#", style="cursor: help;", title="Use this link to register for ETAPS when it becomes available") "Register";
      }
    }
@@ -130,14 +132,14 @@ ul {
  li "tool papers,";
  li "experience papers";
 }
+}
 
 p {
   echo "The final version of the accepted papers will, pending approval, be
 published in the ACM Digital Library and will also be made available
-during the workshop.";
-  br;
-  br;
-  echo "Each submission must:";
+during the workshop.";}
+
+p { echo "Each submission must:";
 ul {
  li "clearly and unambiguously state in which of the three categories it falls";
  li "be original, i.e. not published or submitted elsewhere,";
@@ -146,6 +148,7 @@ ul {
  li "be written in less than 15 pages (research papers and experience reports), or less than 10 pages (tool papers)";
  li { echo "use the standard LaTeX article style
   (\documentclass[10pt]{article}, \usepackage{authblk} for affiliations)";}
+}
 }
 
 p { echo "Please submit your abstract and paper using "; a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair"; echo ".";}
@@ -158,8 +161,8 @@ p "The authors of the best papers will be invited to write a journal version of 
 h2 "Program Committee";
 
 ul {
-li a(href="mailto:brabrand@itu.dk,pierre-etienne.moreau@loria.fr") "Claus Brabrand, IT University of Copenhagen, Denmark (co-chair)";
-li a(href="mailto:pierre-etienne.moreau@loria.fr,brabrand@itu.dk") "Pierre-Etienne Moreau, Nancy-Universiti&eacute; & LORIA, France (co-chair)";
+li {a(href="mailto:brabrand@itu.dk,pierre-etienne.moreau@loria.fr") "Claus Brabrand"; echo ", IT University of Copenhagen, Denmark (co-chair)";}
+li {a(href="mailto:pierre-etienne.moreau@loria.fr,brabrand@itu.dk") "Pierre-Etienne Moreau"; echo ", Nancy-Universiti&eacute; & LORIA, France (co-chair)";}
 
 li "Emilie Balland, INRIA, France";
 li "John Boyland, University of Wisconsin, USA";
@@ -188,8 +191,7 @@ h2 "Important Dates";
  tr { td b "Workshop dates:" ;              td "(weekend) during ETAPS, March 20-28, 2010" ; }  
  }
 
-  }
- }}
+ }
 end
 
 def scope
