@@ -73,7 +73,7 @@ def relatedLinks
    li { 
      h2 "Authors";
      ul {
-          li a(href="http://www.easychair.org/conferences/?conf=ldta2009",onfocus="Use this link to submit a paper when it becomes available") "Submit";
+          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "Submit";
           li a(href="#", style="cursor: help;", title="Use this link to register for ETAPS when it becomes available") "Register";
      }
    }
@@ -81,7 +81,7 @@ def relatedLinks
      h2 "Organizers";
      ul {
           li a(href="http://organisation.ldta.info") "Wiki";
-          li a(href="#", style="cursor: help;", title="Use this link to submit papers when it becomes available") "EasyChair";
+          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair";
      }
    }
    li {
