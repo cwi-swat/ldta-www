@@ -75,6 +75,9 @@ def relatedLinks
      ul {
           li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "Submit";
           li a(href="#", style="cursor: help;", title="Use this link to register for ETAPS when it becomes available") "Register";
+          li a(href="styleTemplates/ldta-2010-template.tex") "LaTeX template";
+          li a(href="styleTemplates/ldta-2010-template.bib") "BiBteX template";
+          li a(href="styleTemplates/ldta-2010-template.pdf") "Pdf template";
      }
    }
    li {
