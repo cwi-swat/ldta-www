@@ -102,7 +102,7 @@ def content
     p {
       echo "LDTA 2010 is a two-day satellite event of ";
       a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; 
-      echo " that will take place between the 20th and the 28th March 2010 in Paphos, Cyprus.";
+      echo " that will take place on the 27th and 28th March 2010 in Paphos, Cyprus.";
     }
 
     //scope();
@@ -122,7 +122,7 @@ def callForPapers
  p "This is the Call For Papers for the Tenth Workshop on Language Descriptions, Tools and Applications (LDTA 2010)";
 
  p { echo "LDTA is a two-day satellite event of ETAPS which will take place
-during "; a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; echo " (March 20-28, 2010) in Paphos, Cyprus.";}
+during "; a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; echo " (March 27-28, 2010) in Paphos, Cyprus.";}
 
   scope();
 
@@ -191,7 +191,7 @@ h2 "Important Dates";
  tr { td b "Abstract submission deadline:"; td "(Friday) November 27, 2009"; }
  tr { td b "Paper submission deadline:";    td "(Friday) December 04, 2009"; }  
  tr { td b "Notification of acceptance:";   td "(Friday) February 05, 2010" ; } 
- tr { td b "Workshop dates:" ;              td "(weekend) during ETAPS, March 20-28, 2010" ; }  
+ tr { td b "Workshop dates:" ;              td "during ETAPS, March 27-28, 2010" ; }  
  }
 
  }
