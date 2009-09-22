@@ -167,6 +167,7 @@ ul {
 li {a(href="mailto:brabrand@itu.dk,pierre-etienne.moreau@loria.fr") "Claus Brabrand"; echo ", IT University of Copenhagen, Denmark (co-chair)";}
 li {a(href="mailto:pierre-etienne.moreau@loria.fr,brabrand@itu.dk") "Pierre-Etienne Moreau"; echo ", Nancy-Universiti&eacute; & LORIA, France (co-chair)";}
 
+li "Uwe A&szlig;mann, Dresden University of Technology, Germany";
 li "Emilie Balland, INRIA, France";
 li "John Boyland, University of Wisconsin, USA";
 li "Giorgios Robert Economopoulos, University of Southampton, UK";
@@ -280,6 +281,7 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
     div.sidebar#sidebar2 {
       br;
       relatedLinks;
+      a(href="http://www.etaps10.cs.ucy.ac.cy/") img(width=80, src="images/etaps-logo-neutral.jpg");
     }
 	
    
