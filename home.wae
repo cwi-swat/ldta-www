@@ -51,7 +51,7 @@ def previous
            sp; entcs("141","4", 2005);
            sp; entcs("164","2", 2006);
            br; entcs("203","2", 2007);
-           sp; echo "2008"; 
+           sp; entcs("238","5", 2008);
            sp; echo "2009"; 
          }
      }
@@ -99,20 +99,18 @@ def relatedLinks
 end
 
 def content
-    p {
-      echo "LDTA 2010 is a two-day satellite event of ";
-      a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; 
-      echo " that will take place on the 27th and 28th March 2010 in Paphos, Cyprus.";
-    }
-
-    //scope();
-
-  //news();
+  news();
   callForPapers();
 end
 
 def news
   section("News") {
+    p { entcs("238", "5", "2008"); echo " proceedings are online at ScienceDirect."; } 
+    p {
+      echo "LDTA 2010 is a two-day satellite event of ";
+      a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; 
+      echo " that will take place on the 27th and 28th March 2010 in Paphos, Cyprus.";
+    }
   }
 end
 
@@ -149,8 +147,7 @@ ul {
  li "contain a clear motivation,";
  li "contain a thorough analysis of the claimed contributions (for example by comparing to related work),";
  li "be written in less than 15 pages (research papers and experience reports), or less than 10 pages (tool papers)";
- li { echo "use the standard LaTeX article style
-  (\documentclass[10pt]{article}, \usepackage{authblk} for affiliations)";}
+ li { echo "use the standard LaTeX article style (&#92;documentclass[10pt]{article}, &#92;usepackage{authblk} for affiliations)";}
 }
 }
 
