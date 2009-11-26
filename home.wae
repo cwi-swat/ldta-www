@@ -187,8 +187,8 @@ li "Tobias Wrigstad, Purdue, USA";
 
 h2 "Important Dates";
  table {
- tr { td b "Abstract submission deadline:"; td "(Friday) November 27, 2009"; }
- tr { td b "Paper submission deadline:";    td "(Friday) December 04, 2009"; }  
+ tr { td b "Abstract submission deadline:"; td a(href="http://timeanddate.com/s/1g4q") "(Friday) November 27, 2009"; }
+ tr { td b "Paper submission deadline:";    td a(href="http://timeanddate.com/s/1g51") "(Friday) December 04, 2009"; }  
  tr { td b "Notification of acceptance:";   td "(Friday) February 05, 2010" ; } 
  tr { td b "Workshop dates:" ;              td "during ETAPS, March 27-28, 2010" ; }  
  }
