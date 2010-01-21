@@ -105,6 +105,11 @@ end
 
 def news
   section("News") {
+    p { echo "We are pleased to announce that LDTA 2010 will have two invited speakers:";}
+    ul {
+      li { a(href="http://www.ibisc.univ-evry.fr/~giavitto") "Jean-Louis Giavitto:"; echo " Title to be confirmed."; }
+      li { a(href="http://cs.lth.se/gorel_hedin") "G&ouml;rel Hedin:"; echo " Ten years of LDTA."; }
+    }
     p { echo "A poster advertising LDTA 2010 is now available in "; a(href="http://ldta.info/poster/ldtaA3.pdf") "A3"; echo " and "; a(href="http://ldta.info/poster/ldtaA4.pdf") "A4"; echo " pdf format. "; }
     p { echo "The LDTA "; entcs("238", "5", "2008"); echo " proceedings are online at ScienceDirect."; } 
     p {
