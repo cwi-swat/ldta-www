@@ -16,8 +16,8 @@ def tweets()
  section("News Tweets") {
    ul(id="twitter_update_list") echo "Loading...";
 
-   script(type="text/javascript",src="http://twitter.com/javascripts/blogger.js",defer="1");
-   script(type="text/javascript",src="http://twitter.com/statuses/user_timeline/ldtaworkshop.json?callback=twitterCallback2&amp;count=10",defer="1");
+   script(type="text/javascript",src="http://twitter.com/javascripts/blogger.js",defer="1") echo " ";
+   script(type="text/javascript",src="http://twitter.com/statuses/user_timeline/ldtaworkshop.json?callback=twitterCallback2&amp;count=10",defer="1") echo " ";
  }
 end
 
@@ -294,17 +294,16 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
     div.sidebar#sidebar2 {
       br;
       relatedLinks;
-      a(href="http://www.etaps10.cs.ucy.ac.cy/") img(width=80, src="images/etaps-logo-neutral.jpg");
+      a(href="http://www.etaps10.cs.ucy.ac.cy/") img(width=80, src="images/etaps-logo-neutral.jpg"); br;
+      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
+      echo "SIGPLAN"; br;
+      echo "In Cooperation";
     }
-	
-   
-    
    }
     div(style="clear: both;") {
       br;
       div#footer p.legal "&copy;2007 All Rights Reserved. Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
     }
   }
-    
   }
 end
