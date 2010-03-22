@@ -146,7 +146,7 @@ def program
    li "Jan Martin Jansen, Rinus Plasmeijer, Pieter Koopman, &amp; Peter Achten. Embedding a Web-Based Workflow Management System in a Functional Language.";
    li "Alain Giorgetti, Claude March&eacute;, Elena Tushkanova, &amp; Olga Kouchnarenko. Specifying Generic Java Programs: two Case Studies.";
    li "Anya Helene Bagge. Language Description for Frontend Implementation.";
-   li "Paul Klint, Tijs van der Storm, &amp; Jurgen Vinju. DSL Tools: Less Maintenance?";
+   li "Paul Klint, Tijs van der Storm, &amp; Jurgen Vinju. On the Impact of DSL tools on the Maintainability of Language Implementations.";
    li "Margus Freudenthal. Using DSLs for Developing Enterprise Systems.";
    li "Arjan v.d. Meer, Alexander Serebrenik, Mark v.d. Brand, &amp; Albert Hofkamp. Formally Specified Type Checkers for Domain Specific Languages.";
   }
