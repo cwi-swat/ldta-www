@@ -47,7 +47,8 @@ def previous
           li workshop("2007","Braga");
           li workshop("2008","Budapest"); 
           li workshop("2009","York");
-          li a(href="index.html") "2010 Paphos";
+          li workshop("2010","Paphos");
+          li a(href="index.html") "2011 Saarbr&uuml;cken";
      }
      br;
      h2 "Proceedings";
@@ -62,14 +63,15 @@ def previous
            br; entcs("203","2", 2007);
            sp; entcs("238","5", 2008);
            sp; echo "2009"; 
+           br; echo "2010";
          }
      }
      br; 
      h2 "Deadlines";
      ul {
-       li "Abstracts: Nov 27, 2009";
-       li "Papers: Dec 04, 2009";
-       li "Notifications: Feb 05, 2010" ; 
+       li "Abstracts: TBA";
+       li "Papers: TBA";
+       li "Notifications: TBA" ; 
      }
 
     
@@ -82,9 +84,9 @@ def relatedLinks
    li { 
      h2 "Authors";
      ul {
-          li a(href="http://ldta.info/LDTA-2010-Programme.pdf") "Program";
-          li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Register";
-          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "Submit";
+//          li a(href="http://ldta.info/LDTA-2010-Programme.pdf") "Program";
+//          li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Register";
+//          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "Submit";
           li a(href="styleTemplates/ldta-2010-template.tex") "LaTeX template";
           li a(href="styleTemplates/ldta-2010-template.bib") "BiBteX template";
           li a(href="styleTemplates/ldta-2010-template.pdf") "Pdf template";
@@ -94,15 +96,15 @@ def relatedLinks
      h2 "Organizers";
      ul {
           li a(href="http://organisation.ldta.info") "Wiki";
-          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair";
+//          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair";
      }
    }
    li {
      h2 "ETAPS";
      ul {
-       li a(href="http://www.etaps10.cs.ucy.ac.cy/") "Website";
-       li a(href="http://www.visitcyprus.com") "Visiting Cyprus";
-       li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Registration";
+//       li a(href="http://www.etaps10.cs.ucy.ac.cy/") "Website";
+//       li a(href="http://www.visitcyprus.com") "Visiting Cyprus";
+//       li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Registration";
      }
    }
  }
@@ -112,24 +114,6 @@ def content
   tweets();
   program();
   callForPapers();
-end
-
-def news
-  section("News") {
-    p { a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Registration"; echo " for ETAPS and LDTA is now open!"; }
-    p { echo "We are pleased to announce that LDTA 2010 will have two invited speakers:";}
-    ul {
-      li { a(href="http://www.ibisc.univ-evry.fr/~giavitto") "Jean-Louis Giavitto:"; echo " Title to be confirmed."; }
-      li { a(href="http://cs.lth.se/gorel_hedin") "G&ouml;rel Hedin:"; echo " Ten years of LDTA."; }
-    }
-    p { echo "A poster advertising LDTA 2010 is now available in "; a(href="http://ldta.info/poster/ldtaA3.pdf") "A3"; echo " and "; a(href="http://ldta.info/poster/ldtaA4.pdf") "A4"; echo " pdf format. "; }
-    p { echo "The LDTA "; entcs("238", "5", "2008"); echo " proceedings are online at ScienceDirect."; } 
-    p {
-      echo "LDTA 2010 is a two-day satellite event of ";
-      a(href="http://www.etaps10.cs.ucy.ac.cy/") "ETAPS"; 
-      echo " that will take place on the 27th and 28th March 2010 in Paphos, Cyprus.";
-    }
-  }
 end
 
 def program
