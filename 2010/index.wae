@@ -318,9 +318,9 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
       br;
       relatedLinks;
       a(href="http://www.etaps10.cs.ucy.ac.cy/") img(width=80, src="images/etaps-logo-neutral.jpg"); br;
-//      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
-//      echo "SIGPLAN"; br;
-//      echo "In Cooperation";
+      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
+      echo "SIGPLAN"; br;
+      echo "In Cooperation";
     }
    }
     div(style="clear: both;") {
