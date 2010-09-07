@@ -12,6 +12,10 @@ def workshop(year,location)
   a(href= year + "/index.html") "<year> <location>";
 end
 
+def intro() 
+  p { echo "LDTA 2011 will take place over two days, during "; a(href="http://www.etaps.org") "ETAPS 2011"; echo " in Saarbr&uuml;cken, Germany."; }
+end
+
 def tweets() 
  section("News Tweets") {
    ul(id="twitter_update_list") echo "Loading...";
@@ -111,6 +115,7 @@ def relatedLinks
 end
 
 def content
+  intro();
   tweets();
 //  program();
 //  callForPapers();
@@ -301,7 +306,7 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
     div.sidebar#sidebar2 {
       br;
       relatedLinks;
-      a(href="http://www.etaps10.cs.ucy.ac.cy/") img(width=80, src="images/etaps-logo-neutral.jpg"); br;
+      a(href="http://www.etaps.org/") img(width=80, src="images/etapsLogo.gif"); br;
 //      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
 //      echo "SIGPLAN"; br;
 //      echo "In Cooperation";
