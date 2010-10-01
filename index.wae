@@ -71,7 +71,21 @@ end
 def previous
  ul { 	
    li { 
-     h2 "Workshops";
+     h2 "Important Dates";
+     ul {
+       li "Abstract submission:";
+       li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dec. 15, 2010" ;
+       li "Full paper submission:";
+       li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dec. 22, 2010" ;
+       li "Author notification:";
+       li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feb. 04, 2011" ;
+       li "Camera-ready papers:";
+       li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBD" ;
+       li "LDTA Workshop:";
+       li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; March 26-27, 2011" ;
+     }
+     br;
+     h2 "Past workshops";
      ul {
           li workshop("2001","Genova");
           li workshop("2002","Grenoble");
@@ -86,7 +100,7 @@ def previous
           li a(href="index.html") "2011 Saarbr&uuml;cken";
      }
      br;
-     h2 "Proceedings";
+     h2 "Past proceedings";
      ul {
           li issue(2001,2001,"999559997-587094");
           li issue(2002,2002,"999349996-587061");
@@ -100,12 +114,6 @@ def previous
           li echo "2010 (forthcoming)";
          }
      br; 
-     h2 "Deadlines";
-     ul {
-       li "Abstracts: TBA";
-       li "Papers: TBA";
-       li "Notifications: TBA" ; 
-     }
 
     
    }
@@ -114,17 +122,32 @@ end
 
 def relatedLinks
  ul { 	
-   li { 
-     h2 "Authors";
-     ul {
+//   li { 
+//     h2 "Authors";
+//     ul {
+//         li a(href="http://www.easychair.org/conferences/?conf=ldta2011")
+//            "EasyChair Submission";
 //          li a(href="http://ldta.info/LDTA-2010-Programme.pdf") "Program";
 //          li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Register";
-//          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "Submit";
-          li a(href="styleTemplates/ldta-2010-template.tex") "LaTeX template";
-          li a(href="styleTemplates/ldta-2010-template.bib") "BiBteX template";
-          li a(href="styleTemplates/ldta-2010-template.pdf") "Pdf template";
+//          li a(href="styleTemplates/ldta-2010-template.tex") "LaTeX template";
+//          li a(href="styleTemplates/ldta-2010-template.bib") "BiBteX template";
+//          li a(href="styleTemplates/ldta-2010-template.pdf") "Pdf template";
+//     }
+//   }
+
+//   li {
+//     h2 "Tool Challenge";
+//     ul {
+//     }
+//   }
+
+   li {
+     h2 "ETAPS";
+     ul {
+      li a(href="http://www.etaps.org/") img(width=80, src="images/etapsLogo.gif");
      }
    }
+
    li {
      h2 "Organizers";
      ul {
@@ -132,20 +155,15 @@ def relatedLinks
 //          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair";
      }
    }
-   li {
-     h2 "ETAPS";
-     ul {
-//       li a(href="http://www.etaps10.cs.ucy.ac.cy/") "Website";
-//       li a(href="http://www.visitcyprus.com") "Visiting Cyprus";
-//       li a(href="http://www.etaps10.cs.ucy.ac.cy/Venue/registration.html") "Registration";
-     }
-   }
+
  }
 end
 
 def content
-  intro();
-  tweets();
+  temporaryContent();
+//  ldtaHeading();
+//  intro();
+//  tweets();
 //  program();
 //  callForPapers();
 end
@@ -169,6 +187,25 @@ def program
    li "Arjan v.d. Meer, Alexander Serebrenik, Mark v.d. Brand, &amp; Albert Hofkamp. Formally Specified Type Checkers for Domain Specific Languages.";
   }
  }
+end
+
+def temporaryContent
+p "11th International Workshop on Language Descriptions, Tools, and Applications" ;
+
+p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
+
+p "Call for Papers to be published soon.";
+
+end
+
+def ldtaHeading
+  section("LDTA 2011 Call for Papers and Tool Challenge Submissions") {
+
+p "11th International Workshop on Language Descriptions, Tools, and
+Applications" ;
+
+p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
+}
 end
 
 def callForPapers
@@ -322,7 +359,7 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
     }
 
     body {
-      div#logo h1.logo "Workshop on Language Descriptions Tools and Applications";
+      div#logo h1.logo "Workshop on Language Descriptions, Tools, and Applications";
       div#page {
         div.sidebar#sidebar1 {
          br; 
@@ -330,12 +367,10 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
         }
 
       div#content div.bgtop div.bgbtm div.post content();
-      
 
     div.sidebar#sidebar2 {
       br;
       relatedLinks;
-      a(href="http://www.etaps.org/") img(width=80, src="images/etapsLogo.gif"); br;
 //      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
 //      echo "SIGPLAN"; br;
 //      echo "In Cooperation";
@@ -343,7 +378,8 @@ html(xmlns='http://www.w3.org/1999/xhtml) {
    }
     div(style="clear: both;") {
       br;
-      div#footer p.legal "&copy;2007 All Rights Reserved. Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
+      div#footer p.legal "&copy;2007 All Rights Reserved. 
+      Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
     }
   }
   }
