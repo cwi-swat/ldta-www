@@ -1,0 +1,104 @@
+module home
+import rightsidebar
+import leftsidebar
+
+site
+ new.html: main
+end
+
+def css(url, media)
+  link(rel="stylesheet", href=url, type="text/css", media=media);
+end
+
+def preface(year,doi)
+  a(href="http://dx.doi.org/10.1016/" + doi) year;
+end
+
+def sp 
+  echo "&nbsp;";
+end
+
+
+def content
+  ldtaHeading();
+  updates();
+//  tweets();
+//  program();
+
+end
+
+
+def ldtaHeading
+ p "11th International Workshop on Language Descriptions, Tools, 
+    and Applications" ;
+ p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
+end
+
+def updates
+section("News and updates") {
+ul {
+ li { echo "Oct. 4, 2010:"; br;
+      a (href="call.html") "Call for Papers";
+      echo " and "; 
+      a (href="tool.html") "Tool Challenge description";
+      echo " now available.";
+    }
+}
+}
+end
+
+def parTitle(title)
+ h1.title title;
+end
+
+def par 
+ div.entry {
+  yield;
+ }
+end
+
+def section(title) 
+  parTitle(title);
+  par yield;
+end
+
+def subtitle(title)
+  p.meta small title;
+end
+
+def main 
+html(xmlns='http://www.w3.org/1999/xhtml) {
+ 
+    head {
+     title "LDTA";
+     meta(http-equiv="content-type", content="text/html; charset=utf-8");
+     meta(name="keywords", content="Programming Debugging Language Descriptions Parsing Parsers Term Rewriting Attribute Grammars Functional Programming Debugging Model Driven Engineering Formal Methods Meta Programming");
+     meta(name="description", content="The International Workshop on Language Descriptions Tools and Applications");
+     meta(name="language", content="NL");
+     css("./style.css", "screen");
+     comment "Design by Free CSS Templates\nhttp://www.freecsstemplates.org\nReleased for free under a Creative Commons Attribution 2.5 License\n\nName       : Compressed \nDescription: A three-column, fixed-width template fit for 1024x768 screen resolutions.\nVersion    : 1.0\nReleased   : 20080524";
+    }
+
+    body {
+      div#logo h1.logo "Workshop on Language Descriptions, Tools, and Applications";
+      div#page {
+        div.sidebar#sidebar1 {
+         br; 
+         previous;
+        }
+
+      div#content div.bgtop div.bgbtm div.post content();
+
+    div.sidebar#sidebar2 {
+      br;
+      relatedLinks;
+    }
+   }
+    div(style="clear: both;") {
+      br;
+      div#footer p.legal "&copy;2007 All Rights Reserved. 
+      Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
+    }
+  }
+  }
+end

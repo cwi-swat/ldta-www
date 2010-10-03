@@ -1,0 +1,179 @@
+       LDTA 2011 Call for Papers and Tool Challenge Submissions
+
+                    11th International Workshop on
+            Language Descriptions, Tools, and Applications
+
+                             www.ldta.info
+
+                         Saarbrucken, Germany
+                          March 26 & 27, 2011
+                           an ETAPS workshop
+
+LDTA is an application and tool-oriented workshop focused on
+grammarware, software based on grammars in some form.  Grammarware
+applications are typically language processing applications and
+traditional examples include parsers, program analyzers, optimizers
+and translators.  A primary focus of LDTA is grammarware that is
+generated from high-level grammar-centric specifications and thus
+submissions on parser generation, attribute grammar systems,
+term/graph rewriting systems, and other grammar-related
+meta-programming tools, techniques, and formalisms are encouraged.
+
+LDTA is also a forum in which theory is put to the test, in many cases
+on real-world software engineering challenges.  Thus, LDTA also
+solicits papers on the application of grammarware to areas including,
+but not limited to, the following:
+- Program analysis, transformation, generation, and verification
+- Implementation of Domain-Specific Languages
+- Reverse engineering and re-engineering
+- Refactoring and other source-to-source transformations
+- Language definition and language prototyping
+- Debugging, profiling, IDE support, and testing
+
+This year LDTA will also be putting theory, as well as techniques and
+tools, to the test in a new way - in the LDTA Tool Challenge.  Tool
+developers are invited to participate in the Challenge by developing
+solutions to a range of language processing tasks over a simple but
+evolving set of imperative programming languages.  Tool challenge
+participants will present highlights of their solution during a
+special session of the workshop and contribute to a joint paper on the
+Tool Challenge and proposed solutions to be co-authored by all
+participants after the workshop.
+
+Note that LDTA is a well-established workshop similar to other
+conferences on (programming) language engineering topics such as SLE
+and GPCE, but is solely focused on grammarware.
+
+Paper Submission
+----------------
+LDTA solicits papers in the following categories:
+
+- research papers: original research results within the scope of LDTA
+  with a clear motivation, description, analysis, and evaluation.
+
+- short research papers: new innovative ideas that have not been
+  completely fleshed out.  As a workshop, LDTA strongly encourages
+  these types of submissions.
+
+- experience report papers: description of the use of a grammarware
+  tool or technique to solve a non-trivial applied problem with an
+  emphasis on the advantages and disadvantages of the chosen approach
+  to the problem.
+
+- tool demo papers: discussion of a tool or technique that explains
+  the contributions of the tool and what specifically will be
+  demonstrated.  These papers should describe tools and applications
+  that do not fit neatly into the specific problems in the Tool
+  Challenge.
+
+Each submission must clearly state in which of these categories it
+falls and not be published or submitted elsewhere.  Papers are to use
+the standard LaTeX article style and the authblk style for
+affiliations; a sample of which is provided at www.ldta.info.
+Research and experience papers are limited to 15 pages, tool
+demonstration papers are limited to 10 pages, and short papers are
+limited to 6 pages.  The final version of the accepted papers will,
+pending approval, be published in the ACM Digital Library and will
+also be made available during the workshop.
+
+Please submit your abstract and paper using EasyChair at
+http://www.easychair.org/conferences/?conf=ldta2011.
+
+The authors of each submission are required to give a presentation at
+LDTA 2011 and tool demonstration paper presentations are intended to
+include a significant live, interactive demonstration.
+
+The authors of the best papers will be invited to write a journal
+version of their paper which will be separately reviewed and, assuming
+acceptance, be published in journal form.  In past years this has been
+done in a special issue of the journal Science of Computer Programming
+(Elsevier Science) and we expect the same this year.  
+
+Invited Speaker
+---------------
+Rinus Plasmeijer, Radboud University Nijmegen, The Netherlands
+
+Important Dates
+---------------
+Abstract submission: Dec. 15, 2010
+Full paper submission: Dec. 22, 2010
+Author notification: Feb. 04, 2011
+Camera-ready papers due: TBD
+LDTA Workshop: March 26-27, 2011
+
+LDTA Tool Challenge
+-------------------
+
+The aim of the LDTA Tool Challenge is to foster a better
+understanding, among tool developers and tool users, of relative
+strengths and weaknesses of different language processing tool
+techniques as well as different implementations and realizations of
+those techniques.  Tool developers are invited to participate in the
+Tool Challenge and demonstrate their solution to the problems during a
+special session of LDTA 2011.
+
+The problems in the LDTA Tool Challenge Problem Set can be viewed as
+points in a two dimensional space: one dimension specifying language
+processing tasks and the second dimension specifying the set of
+languages to which these tasks are to be applied.  Along the task
+dimension are several traditional language processing tasks such as
+parsing, pretty printing, semantic analysis, optimization, and code
+generation. The language dimension is comprised of a simple, but
+evolving, suite of imperative programming languages. These two
+dimensions form a “problem space” in which various techniques and
+implementations will find problems in which they excel and others in
+which they find some challenges; no single technique or tool is
+expected to be optimal for all problems.  Thus, this is a “challenge”
+and not a competition; no winner is declared.  The full description of
+the problem set can be found in the LDTA Tool Challenge Problem Set
+document on the LDTA web page at ( http://www.ldta.info ).
+
+The Tool Challenge is open to developers of all kinds of grammarware
+tools and techniques.  To participate, tool developers must submit the
+following by March 5, 2011.  Names of participants and the name of
+their tool or technique.  Presentation title and abstract.  The short
+abstract should specify on what aspects of the problem set the tool
+was applied, where it excelled and where no solution was offered
+and/or the solution was considered less than optimal.  We expect these
+to be only a few paragraphs in length.
+
+This information is used for scheduling purposes only and is not used
+for evaluation; as all tool developers interested in participating are
+welcome and will be given an opportunity to present their solution at
+the workshop.  Submission of this information indicates a commitment
+to attend LDTA and to participate in the workshop.  This information
+will be listed in the program.
+
+Authors of submissions that appear to be outside of the scope of LDTA
+will be contacted to discuss the relevance of their work to the
+workshop.  Of course tool developers who question whether their work
+falls with the scope of LDTA are encouraged to contact the PC chairs
+early on for clarification.
+
+After the workshop a joint paper will be written by participants and
+submitted to a journal, most likely Science of Computer Programming.
+It is separate from the proceedings of the workshop and any special
+journal issue for the workshop.
+
+Program Committee
+-----------------
+Emilie Balland, INRIA, France
+Paulo Borba, Federal University of Pernambuco, Brazil
+John Boyland, University of Wisconsin, USA
+Claus Brabrand, IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk
+Kyung-Goo Doh, Hanyang University, Ansan, South Korea
+Giorgios Robert Economopoulos, University of Southampton, UK
+Nigel Horspool, University of Victoria, Canada
+Roberto Ierusalimschy, Pontifícia Universidade Católica do Rio de Janeiro, Brazil
+Johan Jeuring, Utrecht University, The Netherlands
+Shane Markstrum, Bucknell University, USA
+João Saraiva, Universidade do Minho, Portugal
+Eli Tilevich, Virginia Tech, USA
+Eric Van Wyk, University of Minnesota, USA (co-chair), evw@cs.umn.edu
+Eelco Visser, Delft University of Technology, The Netherlands
+... more to be added ...
+
+Organizing Committee
+--------------------
+Emilie Balland, INRIA, France
+Giorgios Robert Economopoulos, University of Southampton, UK

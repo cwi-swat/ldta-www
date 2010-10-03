@@ -1,0 +1,79 @@
+module rightsidebar
+
+def sp 
+  echo "&nbsp;";
+end
+
+def relatedLinks
+ ul {
+   li { a(href="new.html") "Home"; br;
+        a(href="flyer.pdf") "1 page LDTA flyer"; 
+      }
+   li { 
+     h2 "Authors";
+     ul {
+         li "Call for Papers";
+         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
+              a(href="call.html") "HTML"; echo "|";
+              a(href="ldta_2011_cfp.pdf") "PDF";  echo "|";
+              a(href="ldta_2011_cfp.txt") "Text"; 
+            }
+         li a(href="http://www.easychair.org/conferences/?conf=ldta2011")
+            "EasyChair Submission";
+         li "Paper templates";
+         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
+              a(href="styleTemplates/ldta-2011-template.tex") "LaTeX";
+              echo "|";
+              a(href="styleTemplates/ldta-2011-template.bib") "BiBteX";
+              echo "|";
+              a(href="styleTemplates/ldta-2011-template.pdf") "PDF";
+            }
+     }
+   }
+
+   li {
+     h2 "Tool Challenge";
+     ul {
+         li "Description and Problems";
+         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
+              a(href="tool.html") "HTML"; echo "|";
+              a(href="ldta_2011_tool_challenge.pdf") "PDF";  echo "|";
+              a(href="ldta_2011_tool_challenge.txt") "Text"; 
+            }
+	 li a(href="http://www-old.oberon.ethz.ch/WirthPubl/CBEAll.pdf") 
+            "Wirth's compiler book";
+	 // li "Wiki/SVN";
+     }
+   }
+
+   li {
+     h2 "Attendees";
+     ul {
+      li { a(href="http://www.etaps.org/") "ETAPS"; sp;
+           a(href="http://www.etaps.org/") img(width=80, src="images/etapsLogo.gif"); 
+         } 
+     }
+   }
+
+   li {
+     h2 "Organization";
+     ul {
+          li a(href="committees.html") "Committees";
+     }
+   }
+
+
+   li {
+     h2 "Organizers";
+     ul {
+          li a(href="http://organisation.ldta.info") "Wiki";
+//          li a(href="http://www.easychair.org/conferences/?conf=ldta2010") "EasyChair";
+     }
+   }
+
+ }
+end
+
+//      a(href="http://www.sigplan.org/") img(width=80, src="images/acmlogo.gif"); br;
+//      echo "SIGPLAN"; br;
+//      echo "In Cooperation";

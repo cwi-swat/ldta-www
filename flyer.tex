@@ -1,0 +1,215 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx,url}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[compact,small]{titlesec}
+
+\pagestyle{empty}
+%\usepackage{changebar}
+
+\newenvironment{itemlist}{
+                         \begin{list}{{$\bullet$}} 
+                         {\setlength{\itemsep}{0pt} 
+                         \setlength{\topsep}{0pt} 
+                         \setlength{\partopsep}{2pt}
+                         \setlength{\leftmargin}{6pt} 
+                         \setlength{\labelwidth}{8pt} 
+                         \setlength{\labelsep}{2pt} 
+                         \setlength{\listparindent}{0pt}
+                         \setlength{\parsep}{0cm}
+                         \usecounter{enumi} 
+                         \setlength{\parskip}{0.2cm}}}{\end{list} }
+
+\newenvironment{inditemlist}{
+                         \begin{list}{{$\bullet$}} 
+                         {\setlength{\itemsep}{0pt} 
+                         \setlength{\topsep}{0pt} 
+                         \setlength{\partopsep}{2pt}
+                         \setlength{\leftmargin}{12pt} 
+                         \setlength{\labelwidth}{8pt} 
+                         \setlength{\labelsep}{2pt} 
+                         \setlength{\listparindent}{0pt}
+                         \setlength{\parsep}{0.07cm}
+                         \usecounter{enumi} 
+                         \setlength{\parskip}{0.2cm}}}{\end{list}\vspace{2mm} }
+
+\begin{document}
+
+\noindent
+\begin{minipage}[b][1.6in][t]{1in}
+\includegraphics[width=1.0\columnwidth]{images/etapsLogo.png}
+
+\end{minipage}
+\begin{minipage}[b][1.6in][t]{5in}
+\begin{center}
+Call for Papers and Tool Challenge Submissions for
+
+\vspace{2mm}
+
+{\Large $11^{th}$ Workshop on \\
+Language Descriptions, Tools and Applications}
+
+\vspace{3mm}
+
+{\Large LDTA 2011}
+
+\vspace{3mm}
+
+March 26 \& 27, 2010 in Saarbr\"ucken, Germany, an ETAPS workshop
+
+\vspace{2mm}
+
+\url{http://ldta.info}
+\end{center}
+\end{minipage}
+\begin{minipage}[b][1.6in][t]{1in}
+\includegraphics[width=1.0\columnwidth]{images/Tools.png}
+\vspace{-8mm}
+\begin{center}
+Tool \\
+Challenge
+\end{center}
+\end{minipage}
+
+\newcommand{\pcmem}[3]{#1}%, #2, #3}
+\newcommand{\pcchair}[4]{#1, (co-chair)\\ #4}
+
+\noindent
+\begin{minipage}[t]{1.9in}
+\textbf{Important Dates:}
+\begin{itemlist}
+\item Abstract submission: \\ Dec. 15, 2010
+\item Full paper submission: \\ Dec. 22, 2010
+\item Author notification: \\ Feb. 4, 2011
+\item Tool challenge submission: \\ Mar. 05, 2011
+%\item Camera-ready papers: TBD 
+\item LDTA Workshop: \\ Mar. 26-27, 2011 ;
+\end{itemlist}
+
+\medskip
+\noindent
+\textbf{Invited Speaker:}
+\begin{itemlist}
+\item Rinus Plasmeijer, Radboud \\ University Nijmegen,\\ The Netherlands
+\end{itemlist}
+
+\medskip
+\noindent
+\textbf{Program\\ Committee:}
+\begin{itemlist}
+\item \pcmem{Emilie Balland}{INRIA}{France}
+\item \pcmem{Paulo Borba}{Federal University of Pernambuco}{Brazil}
+\item \pcmem{John Boyland}{University of Wisconsin - Milwaukee}{USA}
+\item \pcchair{Claus Brabrand}{IT University of Copenhagen}{Denmark}{brabrand@itu.dk}
+\item \pcmem{Kyung-Goo Doh}{Hanyang University, Ansan}{South Korea}
+\item \pcmem{Rob Economopoulos}{University of Southampton}{UK}
+\item \pcmem{Nigel Horspool}{University of Victoria}{Canada}
+\item \pcmem{Roberto Ierusalimschy}{Pontifícia Universidade Católica do Rio de Janeiro}{Brazil}
+\item \pcmem{Johan Jeuring}{Utrecht University}{The Netherlands}
+\item \pcmem{Shane Markstrum}{Bucknell University}{USA}
+\item \pcmem{Jo\~ao Saraiva}{Universidade do Minho}{Portugal}
+\item \pcmem{Eli Tilevich}{Virginia Tech}{USA}
+\item \pcchair{Eric Van Wyk}{University of Minnesota}{USA}{evw@cs.umn.edu}
+\item \pcmem{Eelco Visser}{Delft University of Technology}{The
+    Netherlands}
+% Check that there is room for 20 names in the column.
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+%\item \pcmem{Eelco Visser}{Delft University of Technology}{The Netherlands}
+\item ... more to be added ...
+\end{itemlist}
+
+\medskip
+\noindent
+\textbf{Organizing\\ Committee:}
+\begin{itemlist}
+\item \pcmem{Emilie Balland}{INRIA}{France}
+\item \pcmem{Rob Economopoulos}{University of Southampton}{UK}
+\end{itemlist}
+\end{minipage}
+%\begin{minipage}[t]{0.1in}
+%\end{minipage}
+\begin{minipage}[t]{5.1in}
+LDTA is an application and tool-oriented workshop focused on
+grammarware, software based on grammars in some form.  Grammarware
+applications are typically language processing applications and
+traditional examples include parsers, program analyzers, optimizers
+and translators.  A primary focus of LDTA is grammarware that is
+generated from high-level grammar-centric specifications and thus
+submissions on parser generation, attribute grammar systems,
+term/graph rewriting systems, and other grammar-related
+meta-programming tools, techniques, and formalisms are encouraged.
+
+LDTA is also a forum in which theory is put to the test, in many cases
+on real-world software engineering challenges.  Thus, LDTA also
+solicits papers on the application of grammarware to areas including,
+but not limited to, the following:
+\begin{inditemlist}
+\item Program analysis, transformation, generation, and verification
+\item Implementation of domain specific languages
+\item Reverse engineering and re-engineering
+\item Refactoring and other source-to-source transformations
+\item Language definition and language prototyping
+\item Debugging, profiling, IDE support, and testing
+\end{inditemlist}
+
+Note that LDTA is a well-established workshop similar to other
+conferences on (programming) language engineering topics such as SLE
+and GPCE, but is solely focused on grammarware.
+
+\medskip
+\textbf{Paper Submission:}
+LDTA solicits papers in the following categories:
+\begin{inditemlist}
+\item research papers: original research results within the scope of LDTA
+  with a clear motivation, description, analysis, and evaluation, 15 pages.
+
+\item short research papers: new ideas that have not been
+  completely fleshed out.  As a workshop, LDTA strongly encourages
+  these types of submissions. 6 pages.
+
+\item experience report papers: description of the use of a grammarware
+  tool or technique to solve a non-trivial applied problem, 15 pages.
+
+\item tool demo papers: discussion of an innovative tool or technique,
+  10 pages.
+\end{inditemlist}
+The final version of the accepted papers will,
+pending approval, be published in the ACM Digital Library.  Authors of
+the best papers may be invited to write a journal version for a
+special journal issue.
+%
+The authors of each submission are required to give a presentation at
+LDTA 2011 and tool demonstration paper presentations are intended to
+include a significant live, interactive demonstration.
+%
+Full paper submission instructions available at \url{http://ldta.info}.
+
+\medskip
+\textbf{Tool Challenge:}
+This year LDTA will also be putting theory, as well as techniques and
+tools, to the test in a new way - in the LDTA Tool Challenge.  Tool
+developers are invited to participate in the Challenge by developing
+solutions to a range of language processing tasks over a simple but
+evolving set of imperative programming languages.  Tool challenge
+participants will present highlights of their solution during a
+special session of the workshop and contribute to a joint paper on the
+Tool Challenge and proposed solutions to be co-authored by all
+participants after the workshop.  
+%
+A full description of the Challenge is available at
+\url{http://ldta.info}.  It includes the set of
+problems and suggestions for discussing the success of a specific
+tool or technique.
+
+
+
+
+
+
+\end{minipage}
+
+
+\end{document}
