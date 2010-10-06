@@ -39,7 +39,7 @@ def callForPapers
 
 p "
 LDTA is an application and tool-oriented workshop focused on
-grammarware, software based on grammars in some form.  Grammarware
+grammarware - software based on grammars in some form.  Grammarware
 applications are typically language processing applications and
 traditional examples include parsers, program analyzers, optimizers
 and translators.  A primary focus of LDTA is grammarware that is
@@ -56,12 +56,12 @@ solicits papers on the application of grammarware to areas including,
 but not limited to, the following:
 " ;
 ul {
-li "Program analysis, transformation, generation, and verification" ;
-li "Implementation of Domain-Specific Languages" ;
-li "Reverse engineering and re-engineering" ;
-li "Refactoring and other source-to-source transformations";
-li "Language definition and language prototyping" ;
-li "Debugging, profiling, IDE support, and testing" ;
+li "program analysis, transformation, generation, and verification," ;
+li "implementation of Domain-Specific Languages," ;
+li "reverse engineering and re-engineering," ;
+li "refactoring and other source-to-source transformations,";
+li "language definition and language prototyping, and," ;
+li "debugging, profiling, IDE support, and testing." ;
 }
 
 p "
@@ -86,26 +86,26 @@ and GPCE, but is solely focused on grammarware.
 h2 "Paper Submission";
 
 p "
-LDTA solicits papers in the following categories:
+LDTA solicits papers in the following categories.
 " ;
 ul {
 li "
-  research papers: original research results within the scope of LDTA
+  research papers - original research results within the scope of LDTA
   with a clear motivation, description, analysis, and evaluation.
 " ;
 li "
-  short research papers: new innovative ideas that have not been
+  short research papers - new innovative ideas that have not been
   completely fleshed out.  As a workshop, LDTA strongly encourages
   these types of submissions.
 " ;
 li "
-  experience report papers: description of the use of a grammarware
+  experience report papers - description of the use of a grammarware
   tool or technique to solve a non-trivial applied problem with an
   emphasis on the advantages and disadvantages of the chosen approach
   to the problem.
 " ;
 li "
-  tool demo papers: discussion of a tool or technique that explains
+  tool demo papers - discussion of a tool or technique that explains
   the contributions of the tool and what specifically will be
   demonstrated.  These papers should describe tools and applications
   that do not fit neatly into the specific problems in the Tool
@@ -140,9 +140,9 @@ include a significant live, interactive demonstration.
 p "
 The authors of the best papers will be invited to write a journal
 version of their paper which will be separately reviewed and, assuming
-acceptance, be published in journal form.  In past years this has been
-done in a special issue of the journal Science of Computer Programming
-(Elsevier Science) and we expect the same this year.  
+acceptance, be published in journal form.  As in past years this will
+be done in a special issue of the journal Science of Computer
+Programming (Elsevier Science).
 " ;
 
 

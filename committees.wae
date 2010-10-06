@@ -33,6 +33,8 @@ h2 "Program Committee" ;
 ul {
  li { a(href="http://www.loria.fr/~balland/") "Emilie Balland"; 
       echo ", INRIA, France"; }
+ li { a(href="http://www.ii.uib.no/~anya/") "Anya Helene Bagge" ;
+      echo ", University of Bergen, Norway" ; }
  li { a(href="http://www.cin.ufpe.br/~phmb/") "Paulo Borba"; 
       echo ", Federal University of Pernambuco, Brazil" ; }
  li { a(href="http://www.cs.uwm.edu/~boyland/") "John Boyland"; 
@@ -57,6 +59,8 @@ ul {
       echo ", Bucknell University, United States" ; }
  li { a(href="http://www3.di.uminho.pt/~jas/") "Jo&atilde;o Saraiva"; 
       echo ", Universidade do Minho, Portugal" ; }
+ li { a(href="http://www.sts.tu-harburg.de/~schupp") "Sibylle Schupp";
+      echo ", Hamburg University of Technology, Germany"; }
  li { a(href="http://people.cs.vt.edu/~tilevich/") "Eli Tilevich"; 
       echo ", Virginia Tech, United States" ; }
  li { a(href="http://www.cs.umn.edu/~evw") "Eric Van Wyk"; 

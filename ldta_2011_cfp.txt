@@ -10,7 +10,7 @@
                            an ETAPS workshop
 
 LDTA is an application and tool-oriented workshop focused on
-grammarware, software based on grammars in some form.  Grammarware
+grammarware - software based on grammars in some form.  Grammarware
 applications are typically language processing applications and
 traditional examples include parsers, program analyzers, optimizers
 and translators.  A primary focus of LDTA is grammarware that is
@@ -23,12 +23,12 @@ LDTA is also a forum in which theory is put to the test, in many cases
 on real-world software engineering challenges.  Thus, LDTA also
 solicits papers on the application of grammarware to areas including,
 but not limited to, the following:
-- Program analysis, transformation, generation, and verification
-- Implementation of Domain-Specific Languages
-- Reverse engineering and re-engineering
-- Refactoring and other source-to-source transformations
-- Language definition and language prototyping
-- Debugging, profiling, IDE support, and testing
+- program analysis, transformation, generation, and verification,
+- implementation of Domain-Specific Languages,
+- reverse engineering and re-engineering,
+- refactoring and other source-to-source transformations,
+- language definition and language prototyping, and
+- debugging, profiling, IDE support, and testing.
 
 This year LDTA will also be putting theory, as well as techniques and
 tools, to the test in a new way - in the LDTA Tool Challenge.  Tool
@@ -46,7 +46,7 @@ and GPCE, but is solely focused on grammarware.
 
 Paper Submission
 ----------------
-LDTA solicits papers in the following categories:
+LDTA solicits papers in the following categories.
 
 - research papers: original research results within the scope of LDTA
   with a clear motivation, description, analysis, and evaluation.
@@ -85,9 +85,9 @@ include a significant live, interactive demonstration.
 
 The authors of the best papers will be invited to write a journal
 version of their paper which will be separately reviewed and, assuming
-acceptance, be published in journal form.  In past years this has been
-done in a special issue of the journal Science of Computer Programming
-(Elsevier Science) and we expect the same this year.  
+acceptance, be published in journal form.  As in past years this will
+be done in a special issue of the journal Science of Computer
+Programming (Elsevier Science).
 
 Invited Speaker
 ---------------
@@ -158,6 +158,7 @@ journal issue for the workshop.
 Program Committee
 -----------------
 Emilie Balland, INRIA, France
+Anya Helene Bagge, University of Bergen, Norway,
 Paulo Borba, Federal University of Pernambuco, Brazil
 John Boyland, University of Wisconsin, USA
 Claus Brabrand, IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk
@@ -168,6 +169,7 @@ Roberto Ierusalimschy, Pontifícia Universidade Católica do Rio de Janeiro, Bra
 Johan Jeuring, Utrecht University, The Netherlands
 Shane Markstrum, Bucknell University, USA
 João Saraiva, Universidade do Minho, Portugal
+Sibylle Schupp, Hamburg University of Technology, Germany
 Eli Tilevich, Virginia Tech, USA
 Eric Van Wyk, University of Minnesota, USA (co-chair), evw@cs.umn.edu
 Eelco Visser, Delft University of Technology, The Netherlands
