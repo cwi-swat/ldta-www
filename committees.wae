@@ -57,6 +57,9 @@ ul {
       echo ", Utrecht University, The Netherlands" ; }
  li { a(href="http://www.eg.bucknell.edu/~sm053/") "Shane Markstrum"; 
       echo ", Bucknell University, United States" ; }
+ li { a(href="http://plrg.kaist.ac.kr/ryu") "Sukyoung Ryu" ;
+      echo ", Korea Advanced Institute of Science and Technology,
+      Korea" ; }
  li { a(href="http://www3.di.uminho.pt/~jas/") "Jo&atilde;o Saraiva"; 
       echo ", Universidade do Minho, Portugal" ; }
  li { a(href="http://www.sts.tu-harburg.de/~schupp") "Sibylle Schupp";

@@ -168,6 +168,7 @@ Nigel Horspool, University of Victoria, Canada
 Roberto Ierusalimschy, Pontifícia Universidade Católica do Rio de Janeiro, Brazil
 Johan Jeuring, Utrecht University, The Netherlands
 Shane Markstrum, Bucknell University, USA
+Sukyoung Ryu, Korea Advanced Institute of Science and Technology, Korea
 João Saraiva, Universidade do Minho, Portugal
 Sibylle Schupp, Hamburg University of Technology, Germany
 Eli Tilevich, Virginia Tech, USA
