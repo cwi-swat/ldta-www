@@ -6,7 +6,7 @@ end
 
 def relatedLinks
  ul {
-   li { a(href="new.html") "Home"; br;
+   li { a(href="index.html") "Home"; br;
         a(href="flyer.pdf") "1 page LDTA flyer"; 
       }
    li { 
