@@ -47,8 +47,7 @@ qualities of their tool or technique and if this can be done on a
 subset of the tasks for the simple core languages then that is also
 encouraged.  Thus, participants may attempt to fill in all points in
 the 2 dimensional problem space or focus on those that they find most
-interesting and applicable to their tools and techniques.  Tasks
-dimension
+interesting and applicable to their tools and techniques.
 
 Task Dimension
 ==============
@@ -105,14 +104,6 @@ Wirth's DLX, a simple RISC assembly language also described in his
 text.  Participants may, alternatively, apply the optimizations in
 task T4.b to the generated DLX code.
 
-T6. IDE Support.
-----------------
-Integrated development environments are mainstream tools that
-programmers expect to be available for languages that they choose to
-use.  No specific guidelines are given here for what type of IDE
-support is to be provided; only that it is generated from the
-(possibly annotated) language specification.
-
 Language dimension
 ==================
 
@@ -152,11 +143,15 @@ tools and techniques.
 For example, task 1 may be extended so that comments and layout are
 maintained in the pretty-printing of the input program or a second
 concrete syntax may be developed that has a more modern look-and-feel,
-perhaps something more akin to C, Java, or Haskell.
+perhaps something more akin to C, Java, or Haskell.  Participants may
+also consider developing some sort of integrated development
+environment support for the languages.  In keeping with the goal of
+tool generation, this support should be generated from the (possibly
+annotated) language specification.
 
-The goal of the contributions should be to highlight special
+The goal of these contributions should be to highlight special
 capabilities of the tool that may not be as visible on the predefined
-tasks.  
+tasks.
 
 Community Building
 ==================
