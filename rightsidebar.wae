@@ -42,7 +42,8 @@ def relatedLinks
             }
 	 li a(href="http://www-old.oberon.ethz.ch/WirthPubl/CBEAll.pdf") 
             "Wirth's compiler book";
-	 // li "Wiki/SVN";
+	 li a(href="http://groups.google.com/group/ldta-2011-tool-challenge")
+            "Google group for discussion of Tool Challenge problems" ;
      }
    }
 

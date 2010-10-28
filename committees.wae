@@ -41,12 +41,14 @@ ul {
       echo ", University of Wisconsin, United States" ; }
  li { a(href="http://www.itu.dk/~brabrand/") "Claus Brabrand";
       echo ", IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk" ; }
+ li { a(href="http://research.cs.queensu.ca/~cordy/") "Jim Cordy";
+      echo ", Queen's University, Canada" ; }
  li { echo "Kyung-Goo Doh"; 
       echo ", Hanyang University, Ansan, South Korea" ; }
  li { a(href="http://www.ecs.soton.ac.uk/people/gre") "Giorgios Robert Economopoulos"; 
       echo ", University of Southampton, UK" ; }
-// li { a(href="") "Laurie Hendren";
-//      echo ", McGill University, Canada" ; }
+ li { a(href="http://www.sable.mcgill.ca/~hendren/") "Laurie Hendren";
+      echo ", McGill University, Canada" ; }
  li { a(href="http://webhome.cs.uvic.ca/~nigelh/") "Nigel Horspool";
       echo ", University of Victoria, Canada" ; }
 // li { a(href="") "Shan Shan Huang";
@@ -62,6 +64,8 @@ ul {
       Korea" ; }
  li { a(href="http://www3.di.uminho.pt/~jas/") "Jo&atilde;o Saraiva"; 
       echo ", Universidade do Minho, Portugal" ; }
+ li { a(href="http://www.lsv.ens-cachan.fr/~schmitz/") "Sylvain Schmitz";
+      echo ", Ecole Normale Sup&eacute;rieure de Cachan, France"; }
  li { a(href="http://www.sts.tu-harburg.de/~schupp") "Sibylle Schupp";
       echo ", Hamburg University of Technology, Germany"; }
  li { a(href="http://people.cs.vt.edu/~tilevich/") "Eli Tilevich"; 
@@ -70,7 +74,6 @@ ul {
       echo ", University of Minnesota, United States (co-chair), evw@cs.umn.edu" ; }
  li { a(href="http://swerl.tudelft.nl/bin/view/EelcoVisser") "Eelco Visser"; 
       echo ", Delft University of Technology, The Netherlands" ; }
- li "... additional names to be added ...";
 }
 
 h2 "Organizing Committee";

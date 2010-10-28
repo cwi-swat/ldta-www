@@ -31,7 +31,7 @@ tool developers working on the same problem, but with different tools
 and techniques.  The goal is to create a discussion that fosters a
 better understanding, among tool developers and tool users, of
 relative strengths and weaknesses of different language processing
-tools, techniques, and formalisms.  
+tools, techniques, and formalisms.     
 " ;
 
 h2 "LDTA 2011 Tool Challenge Problem Set";
@@ -46,10 +46,10 @@ second dimension indicating the languages to which these tasks are to
 be applied.  The task dimension consists of several traditional
 language processing tasks such as parsing, pretty printing, semantic
 analysis, optimization, and code generation. The language dimension
-consists of a simple, but evolving, set of imperative programming
+consists of a sequence of evolving imperative programming
 languages.  These are all variations on Oberon0 (a small derivative of
 Pascal, Modula-2, and Oberon) used as an example language in Nicolas
-Wirths book &quot;Compiler Construction&quot; (see URL below).
+Wirth's book &quot;Compiler Construction&quot; (see URL below).
 " ;
 
 p "
@@ -70,8 +70,7 @@ qualities of their tool or technique and if this can be done on a
 subset of the tasks for the simple core languages then that is also
 encouraged.  Thus, participants may attempt to fill in all points in
 the 2 dimensional problem space or focus on those that they find most
-interesting and applicable to their tools and techniques.  Tasks
-dimension
+interesting and applicable to their tools and techniques. 
 ";
 
 h2 "Task Dimension";
@@ -90,7 +89,7 @@ Build a tool that reads in programs, constructs a parse tree
 (implicitly or explicitly), and then pretty-prints the parse tree.
 " ;
 
-h3 "T2. Name binding analysis.";
+h3 "T2. Name binding.";
 p "
 Build a tool that reads in syntactically valid programs and binds all
 name uses to their declarations.  If some names are not declared or
@@ -114,7 +113,7 @@ There are two source-to-source transformation tasks:
 p "
 T4.a. The first asks to what extent can language features introduced
 in extended versions of the language be seen as extensions that can be
-&quot;de-sugared&quot; or reduced to language constructs in a previously
+&quot;de-sugared&quot; or reduced to language constructs in a previously 
 implemented version of the object language?  For example, how can
 control flow constructs introduced in language L2 (see below) be
 transformed into other constructs already implemented in L1.
@@ -150,7 +149,7 @@ The object languages to be implemented in this challenge are all based
 on Oberon0.  This language is defined in " ;
 a (href="http://www-old.oberon.ethz.ch/WirthPubl/CBEAll.pdf")
 "Nicolas Wirth's textbook Compiler Construction" ;
-echo "
+echo ".
 Chapter 6 (p. 30-31) defines the basic syntax of Oberon0 and
 subsequent chapters describe its semantics.
 " ;
@@ -168,23 +167,100 @@ arrays or records).
 " ;
 
 li "
-L2: L1 with additional additional control structures.  Add a
+L2: created by adding additional control structures to L1.  Add a
 Pascal-style for-loop and a Pascal-style case statement.
 " ;
 
 li "
-L3: created by adding Oberon0 procedures" ;
+L3: created by adding Oberon0 procedures to L2." ;
 
 li "
-L4: created by adding Oberon0 arrays and records" ;
+L4: created by adding Oberon0 arrays and records to L3." ;
 
 li "
-L5: created by adding a participant-defined notion of pointers.  This
-requires a new type expression as well as operators to take an address
-and to de-reference a pointer.  The precise syntax of these can be
-based on Oberon, Pascal, C, or otherwise defined by the participant.
-" ;
+
+L5: created by adding a participant-defined notion of pointers to L4.
+This requires a new type expression as well as operators to take an
+address and to de-reference a pointer.  The precise syntax of these
+can be based on Oberon, Pascal, C, or otherwise defined by the
+participant.
+" ; 
 }
+
+
+h2 "Choosing problems to solve";
+
+p "
+The task dimension specifies 5 tasks and the language dimension
+specifies 5 languages, but participants are not expected to complete
+25 different software artifacts to solve each of these 25 problems.
+The languages are organized such that each is a subset, in terms of
+syntactic constructs, of the next language in the sequence. Thus, in
+many cases, a software artifact generated to solve a specific task for
+language L4 is also a solution for that task on languages L1, L2, and
+L3.
+" ;
+
+p "
+Furthermore, as stated above, participants need not solve all
+problems; they should choose problems in the grid that best exemplify
+the characteristics and features of their tool or technique.
+" ;
+
+p "
+By specifying simple languages such as L1 and L2 we aim to provide an
+easy path to participation in the tool challenge.  While we hope that
+participants will provide task solutions to the more complex languages
+they should not feel that they need to solve all the tasks on all the
+languages in order to participate. 
+" ;
+
+p "
+Another reason for specifying the object languages as a sequence of
+extended languages is to give participants the opportunity to show how
+language/task solutions can be developed in a modular manner in which
+extensions are added to an existing language/task solution to create
+another.  
+" ;
+
+p "
+To enable some compatibility of software artifacts from the
+participants and to foster the sharing of sample programs and test
+cases, we provide the following list of suggested software artifacts
+to be completed:
+";
+ul {
+  li "Artifact 1: Task T1 on language L3." ;
+  li "Artifact 2: Task T1 on language L4." ;
+  li "Artifact 3: Task T2 and T3 on language L3 or L4." ;
+  li "Artifact 4: Task T4 on language L3 or L4." ;
+  li "Artifact 5: Task T5 on language L3 or L4." ;
+}
+
+
+
+
+
+//-------------------------------------------------------------
+//p " 
+//The reason for organizing the object languages as a sequence of
+//extended languages is that it gives 
+//" ;
+
+//p "
+//This also gives participants some freedom in choosing the tasks they
+//implement and the complexity of the language for which they are
+//implemented.
+//" ;
+
+//This is not so much a specified task as a means of organizing and
+//implementing languages such as L4 as extension of L3.
+
+//This is not a task but a means of organizing the object languages to
+//demonstrate modular and extensible design and implementation of
+//languages.
+
+
 
 h2 "Participant defined contributions";
 
@@ -214,14 +290,20 @@ tasks.
 
 h2 "Community Building";
 
-p "
-The community building envisioned by this Tool Challenge does not
-need to wait until the workshop begins.  A web-based system will be
-set up to support discussion of the challenge problems and to
-encourage the sharing of test programs.  More details regarding this
-will be made available on the LDTA web page ( www.ldta.info ) as they
-become available.  
-" ;
+p {
+echo "
+The community building envisioned by this Tool Challenge does not need
+to wait until the workshop begins.  A Google-group has been set up
+to support discussion of the challenge problems and to encourage the
+sharing of test programs.  If you have questions about the challenge
+or about specific problems please ask them there.  The web page for
+this group is: " ;
+
+a(href="http://groups.google.com/group/ldta-2011-tool-challenge")
+       "http://groups.google.com/group/ldta-2011-tool-challenge" ;
+echo "." ;
+} 
+
 
 h2 "Submission of abstracts and intention to participate" ;
 

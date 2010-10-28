@@ -63,7 +63,7 @@ T1. Parsing and Pretty Printing.
 Build a tool that reads in programs, constructs a parse tree
 (implicitly or explicitly), and then pretty-prints the parse tree.
 
-T2. Name binding analysis.
+T2. Name binding.
 --------------------------
 Build a tool that reads in syntactically valid programs and binds all
 name uses to their declarations.  If some names are not declared or
@@ -120,17 +120,57 @@ previous one:
 L1: Oberon0 without procedures and with only primitive types (no
 arrays or records).
 
-L2: L1 with additional additional control structures.  Add a
+L2: created by adding additional control structures to L1.  Add a
 Pascal-style for-loop and a Pascal-style case statement.
 
-L3: created by adding Oberon0 procedures
+L3: created by adding Oberon0 procedures to L2.
 
-L4: created by adding Oberon0 arrays and records
+L4: created by adding Oberon0 arrays and records to L3.
 
-L5: created by adding a participant-defined notion of pointers.  This
-requires a new type expression as well as operators to take an address
-and to de-reference a pointer.  The precise syntax of these can be
-based on Oberon, Pascal, C, or otherwise defined by the participant.
+L5: created by adding a participant-defined notion of pointers to L4.
+This requires a new type expression as well as operators to take an
+address and to de-reference a pointer.  The precise syntax of these
+can be based on Oberon, Pascal, C, or otherwise defined by the
+participant.
+
+Choosing problems to solve
+==========================
+
+The task dimension specifies 5 tasks and the language dimension
+specifies 5 languages, but participants are not expected to complete
+25 different software artifacts to solve each of these 25 problems.
+The languages are organized such that each is a subset, in terms of
+syntactic constructs, of the next language in the sequence. Thus, in
+many cases, a software artifact generated to solve a specific task for
+language L4 is also a solution for that task on languages L1, L2, and
+L3.
+
+Furthermore, as stated above, participants need not solve all
+problems; they should choose problems in the grid that best exemplify
+the characteristics and features of their tool or technique.
+
+By specifying simple languages such as L1 and L2 we aim to provide an
+easy path to participation in the tool challenge.  While we hope that
+participants will provide task solutions to the more complex languages
+they should not feel that they need to solve all the tasks on all the
+languages in order to participate. 
+
+Another reason for specifying the object languages as a sequence of
+extended languages is to give participants the opportunity to show how
+language/task solutions can be developed in a modular manner in which
+extensions are added to an existing language/task solution to create
+another.  
+
+To enable some compatibility of software artifacts from the
+participants and to foster the sharing of sample programs and test
+cases, we provide the following list of suggested software artifacts
+to be completed:
+ - Artifact 1: Task T1 on language L3.
+ - Artifact 2: Task T1 on language L4.
+ - Artifact 3: Task T2 and T3 on language L3 or L4.
+ - Artifact 4: Task T4 on language L3 or L4.
+ - Artifact 5: Task T5 on language L3 or L4.
+
 
 Participant defined contributions
 =================================
@@ -156,12 +196,12 @@ tasks.
 Community Building
 ==================
 
-The community building envisioned by this Tool Challenge does not
-need to wait until the workshop begins.  A web-based system will be
-set up to support discussion of the challenge problems and to
-encourage the sharing of test programs.  More details regarding this
-will be made available on the LDTA web page ( www.ldta.info ) as they
-become available.  
+The community building envisioned by this Tool Challenge does not need
+to wait until the workshop begins.  A "Google group" has been set up
+to support discussion of the challenge problems and to encourage the
+sharing of test programs.  If you have questions about the challenge
+or about specific problems please ask them there.  The web page for
+this group is: http://groups.google.com/group/ldta-2011-tool-challenge.
 
 Submission of abstracts and intention to participate
 ====================================================

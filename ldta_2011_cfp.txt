@@ -97,7 +97,7 @@ Important Dates
 ---------------
 Abstract submission: Dec. 15, 2010
 Full paper submission: Dec. 22, 2010
-Author notification: Feb. 04, 2011
+Author notification: Feb. 01, 2011
 Camera-ready papers due: TBD
 LDTA Workshop: March 26-27, 2011
 
@@ -161,20 +161,25 @@ Emilie Balland, INRIA, France
 Anya Helene Bagge, University of Bergen, Norway,
 Paulo Borba, Federal University of Pernambuco, Brazil
 John Boyland, University of Wisconsin, USA
-Claus Brabrand, IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk
+Claus Brabrand, IT University of Copenhagen, Denmark,
+  (co-chair), brabrand@itu.dk
+Jim Cordy, Queen's University, Canada
 Kyung-Goo Doh, Hanyang University, Ansan, South Korea
 Giorgios Robert Economopoulos, University of Southampton, UK
+Laurie Hendren, McGill University, Canada
 Nigel Horspool, University of Victoria, Canada
-Roberto Ierusalimschy, Pontifícia Universidade Católica do Rio de Janeiro, Brazil
+Roberto Ierusalimschy, Pontifícia Universidade Católica do 
+  Rio de Janeiro, Brazil
 Johan Jeuring, Utrecht University, The Netherlands
 Shane Markstrum, Bucknell University, USA
 Sukyoung Ryu, Korea Advanced Institute of Science and Technology, Korea
-João Saraiva, Universidade do Minho, Portugal
+Joao Saraiva, Universidade do Minho, Portugal
+Sylvain Schmitz, Ecole Normale Superieure de Cachan, France
 Sibylle Schupp, Hamburg University of Technology, Germany
 Eli Tilevich, Virginia Tech, USA
 Eric Van Wyk, University of Minnesota, USA (co-chair), evw@cs.umn.edu
 Eelco Visser, Delft University of Technology, The Netherlands
-... more to be added ...
+
 
 Organizing Committee
 --------------------

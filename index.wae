@@ -14,9 +14,9 @@ def preface(year,doi)
   a(href="http://dx.doi.org/10.1016/" + doi) year;
 end
 
-def sp 
-  echo "&nbsp;";
-end
+//def sp 
+//  echo "&nbsp;";
+//end
 
 
 def content
@@ -37,6 +37,16 @@ end
 def updates
 section("News and updates") {
 ul {
+ li { echo "Oct. 28, 2010:"; br;
+      echo "Some clarifications were made to the ";
+      a (href="tool.html") "Tool Challenge description"; br;
+      echo "A Google-group has been created to discussing the Tool
+      Challenge and specific questions about individual problems. 
+      It is available " ;
+      a(href="http://groups.google.com/group/ldta-2011-tool-challenge")
+      "here";       
+      echo "." ;
+    }
  li { echo "Oct. 9, 2010:"; br;
       a (href="call.html") "Call for Papers";
       echo " and "; 
