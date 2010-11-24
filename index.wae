@@ -37,6 +37,14 @@ end
 def updates
 section("News and updates") {
 ul {
+ li { echo "Nov. 24, 2010:"; br;
+      echo "The " ;
+      a(href="http://portal.acm.org/citation.cfm?id=1868281")
+       "proceedings of LDTA 2010 " ; 
+      echo "are now online in the ACM Digital Library.  Be sure to get
+      your paper for 2011 submitted as the 2011 proceedings will be
+      published there as well." ;
+    }
  li { echo "Oct. 28, 2010:"; br;
       echo "Some clarifications were made to the ";
       a (href="tool.html") "Tool Challenge description"; br;
