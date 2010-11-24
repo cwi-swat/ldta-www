@@ -1,4 +1,4 @@
-all: old-index.html leftsidebar.html rightsidebar.html call.html index.html tool.html committees.html
+all: leftsidebar.html rightsidebar.html call.html index.html tool.html committees.html
 
 #%.html: %.wae
 #	java -jar ./Waebric.jar $< $@
@@ -7,8 +7,8 @@ clean:
 	rm -f old-index.html leftsidebar.html rightsidebar.html call.html \
 	      index.html tool.html committees.html
 
-old-index.html:	leftsidebar.html rightsidebar.html old-index.wae
-	java -jar ./Waebric.jar old-index.wae old-index.html
+#old-index.html:	leftsidebar.html rightsidebar.html old-index.wae
+#	java -jar ./Waebric.jar old-index.wae old-index.html
 
 leftsidebar.html:	leftsidebar.wae
 	java -jar ./Waebric.jar leftsidebar.wae leftsidebar.html

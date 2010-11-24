@@ -53,7 +53,7 @@ def previous
           li issue(2007,2008,"997969997-684405");
           li issue(2008,2009,"997619994-1525096");
           li issue(2009,2010,"997469992-2353758");
-          li echo "2010 (forthcoming)";
+          li a(href="http://portal.acm.org/citation.cfm?id=1868281") 2010 ;
          }
      br; 
    }
