@@ -43,7 +43,8 @@ ul {
       echo ", IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk" ; }
  li { a(href="http://research.cs.queensu.ca/~cordy/") "Jim Cordy";
       echo ", Queen's University, Canada" ; }
- li { echo "Kyung-Goo Doh"; 
+
+ li { a(href="http://plasse.hanyang.ac.kr/~doh") "Kyung-Goo Doh"; 
       echo ", Hanyang University, Ansan, South Korea" ; }
  li { a(href="http://www.ecs.soton.ac.uk/people/gre") "Giorgios Robert Economopoulos"; 
       echo ", University of Southampton, UK" ; }
