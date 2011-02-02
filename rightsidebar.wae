@@ -13,12 +13,12 @@ def relatedLinks
      h2 "Authors";
      ul {
 
-         li { echo "NEW - Final version paper templates";
+         li { echo "Updated NEW - Final version paper templates";
           ul {
            li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
-                a(href="LDTA2011_Paper_Files.tar.gz") "as a gzipped tar file";}
+                a(href="LDTA2011_Paper_Files_v2.tar.gz") "as a gzipped tar file";}
            li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
-                a(href="LDTA2011_Paper_Files.zip") "as a zip file"; }
+                a(href="LDTA2011_Paper_Files_v2.zip") "as a zip file"; }
           }
          }
 

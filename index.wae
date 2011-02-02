@@ -37,6 +37,11 @@ end
 def updates
 section("News and updates") {
 ul {
+ li { echo "Feb. 2, 2011, 20:45 GMT:"; br;
+      echo "A mistake in the original templates for the final
+      camera-ready versions of the papers was fixed and the new
+      correct files can be found in the sidebar to the right." ;
+    }
  li { echo "Feb. 2, 2011:"; br;
       echo "The following papers will be presented at LDTA 2011." ;
       br;
