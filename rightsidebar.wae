@@ -20,14 +20,18 @@ def relatedLinks
             }
          li a(href="http://www.easychair.org/conferences/?conf=ldta2011")
             "EasyChair Submission";
-         li "Paper templates";
+         li "NEW - Final version paper templates";
          li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
-              a(href="styleTemplates/ldta-2011-template.tex") "LaTeX";
-              echo "|";
-              a(href="styleTemplates/ldta-2011-template.bib") "BiBteX";
-              echo "|";
-              a(href="styleTemplates/ldta-2011-template.pdf") "PDF";
+              a(href="LDTA2011_Paper_Files.tar.gz") "as a zipped tar file";
             }
+//         li "Paper templates";
+//         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
+//              a(href="styleTemplates/ldta-2011-template.tex") "LaTeX";
+//              echo "|";
+//              a(href="styleTemplates/ldta-2011-template.bib") "BiBteX";
+//              echo "|";
+//              a(href="styleTemplates/ldta-2011-template.pdf") "PDF";
+//            }
      }
    }
 
