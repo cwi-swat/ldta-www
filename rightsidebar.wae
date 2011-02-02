@@ -22,7 +22,7 @@ def relatedLinks
             "EasyChair Submission";
          li "NEW - Final version paper templates";
          li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
-              a(href="LDTA2011_Paper_Files.tar.gz") "as a zipped tar file";
+              a(href="LDTA2011_Paper_Files.tar.gz") "as a gzipped tar file";
             }
 //         li "Paper templates";
 //         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
