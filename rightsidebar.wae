@@ -23,6 +23,8 @@ def relatedLinks
          li "NEW - Final version paper templates";
          li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
               a(href="LDTA2011_Paper_Files.tar.gz") "as a gzipped tar file";
+              echo "|";
+              a(href="LDTA2011_Paper_Files.zip") "as a zip file";
             }
 //         li "Paper templates";
 //         li { sp;sp;sp;sp;sp;sp; echo "-"; sp;
