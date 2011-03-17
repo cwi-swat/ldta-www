@@ -37,6 +37,12 @@ end
 def updates
 section("News and updates") {
 ul {
+ li { echo "Mar. 17, 2011:"; br;
+      echo "The LDTA 2011 program with times for talks and Tool " ;
+      echo "Challenge presentations is available " ; 
+      a(href="LDTA-2011-Programme.pdf") "here." ; 
+ }
+    
  li { echo "Feb. 2, 2011, 20:45 GMT:"; br;
       echo "A mistake in the original templates for the final
       camera-ready versions of the papers was fixed and the new
