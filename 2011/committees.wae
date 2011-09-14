@@ -1,0 +1,137 @@
+module committees
+import leftsidebar
+import rightsidebar
+
+site
+ committees.html: main
+end
+
+def css(url, media)
+  link(rel="stylesheet", href=url, type="text/css", media=media);
+end
+
+
+def parTitle(title)
+ h1.title title;
+end
+
+def par 
+ div.entry {
+  yield;
+ }
+end
+
+def section(title) 
+  parTitle(title);
+  par yield;
+end
+
+def allcommittees
+section("LDTA Committees") {
+
+h2 "Program Committee" ;
+ul {
+ li { a(href="http://www.loria.fr/~balland/") "Emilie Balland"; 
+      echo ", INRIA, France"; }
+ li { a(href="http://www.ii.uib.no/~anya/") "Anya Helene Bagge" ;
+      echo ", University of Bergen, Norway" ; }
+ li { a(href="http://www.cin.ufpe.br/~phmb/") "Paulo Borba"; 
+      echo ", Federal University of Pernambuco, Brazil" ; }
+ li { a(href="http://www.cs.uwm.edu/~boyland/") "John Boyland"; 
+      echo ", University of Wisconsin, United States" ; }
+ li { a(href="http://www.itu.dk/~brabrand/") "Claus Brabrand";
+      echo ", IT University of Copenhagen, Denmark (co-chair), brabrand@itu.dk" ; }
+ li { a(href="http://research.cs.queensu.ca/~cordy/") "Jim Cordy";
+      echo ", Queen's University, Canada" ; }
+
+ li { a(href="http://plasse.hanyang.ac.kr/~doh") "Kyung-Goo Doh"; 
+      echo ", Hanyang University, Ansan, South Korea" ; }
+ li { a(href="http://www.ecs.soton.ac.uk/people/gre") "Giorgios Robert Economopoulos"; 
+      echo ", University of Southampton, UK" ; }
+ li { a(href="http://www.sable.mcgill.ca/~hendren/") "Laurie Hendren";
+      echo ", McGill University, Canada" ; }
+ li { a(href="http://webhome.cs.uvic.ca/~nigelh/") "Nigel Horspool";
+      echo ", University of Victoria, Canada" ; }
+// li { a(href="") "Shan Shan Huang";
+//      echo ", Logic Blox, United States" ;}
+ li { a(href="http://www.inf.puc-rio.br/~roberto/")"Roberto Ierusalimschy" ;
+      echo ", Pontif&iacute;cia Universidade Cat&oacute;lica do Rio de Janeiro, Brazil" ; }
+ li { a(href="http://people.cs.uu.nl/johanj/") "Johan Jeuring"; 
+      echo ", Utrecht University, The Netherlands" ; }
+ li { a(href="http://www.eg.bucknell.edu/~sm053/") "Shane Markstrum"; 
+      echo ", Bucknell University, United States" ; }
+ li { a(href="http://plrg.kaist.ac.kr/ryu") "Sukyoung Ryu" ;
+      echo ", Korea Advanced Institute of Science and Technology,
+      Korea" ; }
+ li { a(href="http://www3.di.uminho.pt/~jas/") "Jo&atilde;o Saraiva"; 
+      echo ", Universidade do Minho, Portugal" ; }
+ li { a(href="http://www.lsv.ens-cachan.fr/~schmitz/") "Sylvain Schmitz";
+      echo ", Ecole Normale Sup&eacute;rieure de Cachan, France"; }
+ li { a(href="http://www.sts.tu-harburg.de/~schupp") "Sibylle Schupp";
+      echo ", Hamburg University of Technology, Germany"; }
+ li { a(href="http://people.cs.vt.edu/~tilevich/") "Eli Tilevich"; 
+      echo ", Virginia Tech, United States" ; }
+ li { a(href="http://www.cs.umn.edu/~evw") "Eric Van Wyk"; 
+      echo ", University of Minnesota, United States (co-chair), evw@cs.umn.edu" ; }
+ li { a(href="http://swerl.tudelft.nl/bin/view/EelcoVisser") "Eelco Visser"; 
+      echo ", Delft University of Technology, The Netherlands" ; }
+}
+
+h2 "Organizing Committee";
+ul {
+ li { a(href="http://www.loria.fr/~balland/") "Emilie Balland"; 
+      echo ", INRIA, France"; }
+ li { a(href="http://www.ecs.soton.ac.uk/people/gre") "Giorgios Robert Economopoulos" ;
+      echo ", University of Southampton, UK"; }
+}
+
+h2 "Steering Committee";
+ul {
+ li { a(href="http://www.win.tue.nl/~mvdbrand/") "Mark van den Brand"; 
+      echo ", Eindhoven University of Technology, The Netherlands"; }
+ li { a(href="http://cs.lth.se/gorel_hedin") "G&ouml;rel Hedin"; 
+      echo ", Lund University, Sweden"; }
+ li { a(href="http://www.comp.mq.edu.au/~asloane/") "Tony Sloane"; 
+      echo ", Macquarie University, Australia"; }
+ li { a(href="http://www.cs.umn.edu/~evw") "Eric Van Wyk"; 
+      echo ", University of Minnesota, United States"; }
+}
+}
+end
+
+def main 
+html(xmlns='http://www.w3.org/1999/xhtml) {
+ 
+    head {
+     title "LDTA";
+     meta(http-equiv="content-type", content="text/html; charset=utf-8");
+     meta(name="keywords", content="Programming Debugging Language Descriptions Parsing Parsers Term Rewriting Attribute Grammars Functional Programming Debugging Model Driven Engineering Formal Methods Meta Programming");
+     meta(name="description", content="The International Workshop on Language Descriptions Tools and Applications");
+     meta(name="language", content="NL");
+     css("./style.css", "screen");
+     comment "Design by Free CSS Templates\nhttp://www.freecsstemplates.org\nReleased for free under a Creative Commons Attribution 2.5 License\n\nName       : Compressed \nDescription: A three-column, fixed-width template fit for 1024x768 screen resolutions.\nVersion    : 1.0\nReleased   : 20080524";
+    }
+
+    body {
+      div#logo h1.logo "Workshop on Language Descriptions, Tools, and Applications";
+      div#page {
+        div.sidebar#sidebar1 {
+         br; 
+         previous;
+        }
+
+      div#content div.bgtop div.bgbtm div.post allcommittees();
+
+    div.sidebar#sidebar2 {
+      br;
+      relatedLinks;
+    }
+   }
+    div(style="clear: both;") {
+      br;
+      div#footer p.legal "&copy;2007 All Rights Reserved. 
+      Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
+    }
+  }
+  }
+end

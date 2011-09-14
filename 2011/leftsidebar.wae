@@ -12,22 +12,21 @@ def previous
  ul { 	
    li { 
      h2 "Important Dates";
-      ul {
+     ul {
           li "Abstract submission:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBA" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dec. 15, 2010" ;
           li "Full paper submission:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBA" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dec. 22, 2010" ;
           li "Author notification:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBA" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feb. 1, 2011" ;
           li "Tool challenge submission:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBA" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mar. 05, 2011" ;
           li "Camera-ready papers:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TBA" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feb. 10, 2011" ;
           li "LDTA Workshop:";
-          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mar. 31-Apr. 1, 2012" ;
+          li "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mar. 26-27, 2011" ;
      }
-     
-    br;
+     br;
      h2 "Past workshops";
      ul {
           li workshop("2001","Genova");
@@ -40,8 +39,7 @@ def previous
           li workshop("2008","Budapest"); 
           li workshop("2009","York");
           li workshop("2010","Paphos");
-          li workshop("2011","Saarbr&uuml;cken");
-          li a(href="index.html") "2012 Tallinn";
+          li a(href="index.html") "2011 Saarbr&uuml;cken";
      }
      br;
      h2 "Past proceedings";
@@ -56,7 +54,6 @@ def previous
           li issue(2008,2009,"997619994-1525096");
           li issue(2009,2010,"997469992-2353758");
           li a(href="http://portal.acm.org/citation.cfm?id=1868281") 2010 ;
-          li a(href="http://portal.acm.org/citation.cfm?id=1988783") 2011 ;
          }
      br; 
    }

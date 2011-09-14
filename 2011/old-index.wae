@@ -1,0 +1,427 @@
+module home
+//import rightsidebar
+import leftsidebar
+
+site
+ old-index.html: main
+end
+
+def css(url, media)
+  link(rel="stylesheet", href=url, type="text/css", media=media);
+end
+
+def intro() 
+  p { echo "LDTA 2011 will take place over two days, during "; 
+      a(href="http://www.etaps.org") "ETAPS 2011"; 
+      echo " in Saarbr&uuml;cken, Germany."; }
+end
+
+def tweets() 
+ section("News Tweets") {
+   ul(id="twitter_update_list") echo "Loading...";
+
+   script(type="text/javascript",src="http://twitter.com/javascripts/blogger.js",defer="1") echo " ";
+   script(type="text/javascript",src="http://twitter.com/statuses/user_timeline/ldtaworkshop.json?callback=twitterCallback2&amp;count=10",defer="1") echo " ";
+ }
+end
+
+// this does not work anymore due to a bug at sciencedirect
+def sciencedirect(issn, volume, issue, year) 
+  a(href="http://www.sciencedirect.com/science/publication?issn=" + issn + "&amp;volume=" + volume + "&amp;issue=" + issue) year;
+end
+
+// this does not work anymore due to a bug at sciencedirect
+def entcs(volume, issue, year)
+  sciencedirect("15710661", volume, issue, year);
+end
+
+// LINKS TO THE LDTA ENTCS ISSUES:
+// 2001: http://www.sciencedirect.com/science/issue/13109-2001-999559997-587094
+// 2002: http://www.sciencedirect.com/science/issue/13109-2002-999349996-587061
+// 2003: http://www.sciencedirect.com/science/issue/13109-2003-999179996-596016
+// 2004: http://www.sciencedirect.com/science/issue/13109-2004-998899999-550247
+// 2005: http://www.sciencedirect.com/science/issue/13109-2005-998589995-612769
+// 2006: http://www.sciencedirect.com/science/issue/13109-2006-998359997-635744
+// 2007: http://www.sciencedirect.com/science/issue/13109-2008-997969997-684405
+// 2008: http://www.sciencedirect.com/science/issue/13109-2009-997619994-1525096
+// 2009: http://www.sciencedirect.com/science/issue/13109-2010-997469992-2353758
+// LINKS TO THE PREFACES:
+// 2001: http://dx.doi.org/10.1016/S1571-0661(05)80930-2
+// 2002: http://dx.doi.org/10.1016/S1571-0661(05)80433-5
+// 2003: http://dx.doi.org/10.1016/S1571-0661(05)82622-2
+// 2004: http://dx.doi.org/10.1016/j.entcs.2004.09.024
+// 2005: http://dx.doi.org/10.1016/j.entcs.2005.05.010
+// 2006: http://dx.doi.org/10.1016/j.entcs.2006.06.012
+// 2007: http://dx.doi.org/10.1016/j.entcs.2008.03.040
+// 2008: http://dx.doi.org/10.1016/j.entcs.2009.09.036
+// 2009: http://dx.doi.org/10.1016/j.entcs.2010.08.027
+
+def preface(year,doi)
+  a(href="http://dx.doi.org/10.1016/" + doi) year;
+end
+
+
+def sp 
+  echo "&nbsp;";
+end
+
+
+
+def content
+  temporaryContent();
+//  ldtaHeading();
+//  intro();
+//  tweets();
+//  program();
+//  callForPapers();
+end
+
+def program
+ section("Program 2010") {
+
+  p { echo "The "; a(href="http://ldta.info/LDTA-2010-Programme.pdf") "program"; echo " for LDTA 2010 is now available. The accepted papers are: "; }
+
+  ul {
+   li "Stefan Holdermans &amp; Jurriaan Hage. On the R&ocirc;le of Min. Typing Derivations in Type-driven Program Transformation.";
+   li "Daniela da Cruz, Pedro Rangel Henriques, &amp; Jorge. GamaSlicer: an Online Laboratory for Program Verification and Analysis.";
+   li "Agostino Cortesi &amp; Raju Halder. Dependence Condition Graph for Semantics-Based Abstract Program Slicing.";
+   li "Bas Basten &amp; Jurgen Vinju. Faster Ambiguity Detection by Grammar Filtering.";
+   li "Adrian Johnstone &amp; Elizabeth Scott. Tear-Insert-Fold Grammars.";
+   li "Jan Martin Jansen, Rinus Plasmeijer, Pieter Koopman, &amp; Peter Achten. Embedding a Web-Based Workflow Management System in a Functional Language.";
+   li "Alain Giorgetti, Claude March&eacute;, Elena Tushkanova, &amp; Olga Kouchnarenko. Specifying Generic Java Programs: two Case Studies.";
+   li "Anya Helene Bagge. Language Description for Frontend Implementation.";
+   li "Paul Klint, Tijs van der Storm, &amp; Jurgen Vinju. On the Impact of DSL tools on the Maintainability of Language Implementations.";
+   li "Margus Freudenthal. Using DSLs for Developing Enterprise Systems.";
+   li "Arjan v.d. Meer, Alexander Serebrenik, Mark v.d. Brand, &amp; Albert Hofkamp. Formally Specified Type Checkers for Domain Specific Languages.";
+  }
+ }
+end
+
+def relatedLinks
+ ul {
+   li  a(href="http://www.etaps.org/") img(width=80, src="images/etapsLogo.gif"); 
+   li {
+     h2 "Organizers";
+     ul {
+          li a(href="http://organisation.ldta.info") "Wiki";
+     }
+   }
+
+ }
+end
+
+
+def temporaryContent
+ p "11th International Workshop on Language Descriptions, Tools, 
+    and Applications" ;
+ p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
+ p "Call for Papers to be published soon.";
+end
+
+def ldtaHeading
+ section("LDTA 2011 Call for Papers and Tool Challenge Submissions") {
+ p "11th International Workshop on Language Descriptions, Tools, and  
+    Applications" ;
+ p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
+}
+end
+
+def callForPapers
+ section("Call for Papers and Tool Challenge Submissions") { 
+
+ p "
+                    11th International Workshop on
+            Language Descriptions, Tools, and Applications
+   ";
+ p "
+                             www.ldta.info
+   ";
+ p "
+                         Saarbrucken, Germany
+                          March 26 & 27, 2011
+                           an ETAPS workshop
+   ";
+
+
+p "
+LDTA is an application and tool-oriented workshop focused on
+grammarware, software based on grammars in some form.  Grammarware
+applications are typically language processing applications and
+traditional examples include parsers, program analyzers, optimizers
+and translators.  A primary focus of LDTA is grammarware that is
+generated from high-level grammar-centric specifications and thus
+submissions on parser generation, attribute grammar systems,
+term/graph rewriting systems, and other grammar-related
+meta-programming tools, techniques, and formalisms are encouraged.
+" ;
+
+p "
+LDTA is also a forum in which theory is put to the test, in many cases
+on real-world software engineering challenges.  Thus, LDTA also
+solicits papers on the application of grammarware to areas including,
+but not limited to, the following:
+" ;
+ul {
+li "Program analysis, transformation, generation, and verification" ;
+li "Implementation of Domain-Specific Languages" ;
+li "Reverse engineering and re-engineering" ;
+li "Refactoring and other source-to-source transformations";
+li "Language definition and language prototyping" ;
+li "Debugging, profiling, IDE support, and testing" ;
+}
+
+p "
+This year LDTA will also be putting theory, as well as techniques and
+tools, to the test in a new way - in the LDTA Tools Challenge.  Tool
+developers are invited to participate in the Challenge by developing
+solutions to a range of language processing tasks over a simple but
+evolving set of imperative programming languages.  Tool challenge
+participants will present highlights of their solution during a
+special session of the workshop and contribute to a joint paper on the
+tools challenge and proposed solutions to be co-authored by all
+participants after the workshop.
+" ;
+
+p "
+Note that LDTA is a well-established workshop similar to other
+conferences on (programming) language engineering topics such as SLE
+and GPCE, but is solely focused on grammarware.
+" ;
+}
+
+h2 "Paper Submission";
+
+p "
+LDTA solicits papers in the following categories:
+" ;
+ul {
+li "
+  research papers: original research results within the scope of LDTA
+  with a clear motivation, description, analysis, and evaluation.
+" ;
+li "
+  short research papers: new innovative ideas that have not been
+  completely fleshed out.  As a workshop, LDTA strongly encourages
+  these types of submissions.
+" ;
+li "
+  experience report papers: description of the use of a grammarware
+  tool or technique to solve a non-trivial applied problem with an
+  emphasis on the advantages and disadvantages of the chosen approach
+  to the problem.
+" ;
+li "
+  tool demo papers: discussion of a tool or technique that explains
+  the contributions of the tool and what specifically will be
+  demonstrated.  These papers should describe tools and applications
+  that do not fit neatly into the specific problems in the Tools
+  Challenge.
+";
+}
+
+p "
+Each submission must clearly state in which of these categories it
+falls and not be published or submitted elsewhere.  Papers are to use
+the standard LaTeX article style and the authblk style for
+affiliations; a sample of which is provided at www.ldta.info.
+Research and experience papers are limited to 15 pages, tool
+demonstration papers are limited to 10 pages, and short papers are
+limited to 6 pages.  The final version of the accepted papers will,
+pending approval, be published in the ACM Digital Library and will
+also be made available during the workshop.
+" ;
+
+p {
+echo "Please submit your abstract and paper using EasyChair at ";
+a(href="http://www.easychair.org/conferences/?conf=ldta2011") "(http://www.easychair.org/conferences/?conf=ldta2011)";
+echod "." ;
+}
+
+p "
+The authors of each submission are required to give a presentation at
+LDTA 2011 and tool demonstration paper presentations are intended to
+include a significant live, interactive demonstration.
+" ;
+
+p "
+The authors of the best papers will be invited to write a journal
+version of their paper which will be separately reviewed and, assuming
+acceptance, be published in journal form.  In past years this has been
+done in a special issue of the journal Science of Computer Programming
+(Elsevier Science) and we expect the same this year.  
+" ;
+
+
+h2 "Invited Speaker" ;
+
+p {
+a (href="http://www.cs.ru.nl/~rinus/") "Rinus Plasmeijer";
+echo ". Radboud University Nijmegen, The Netherlands";
+}
+
+
+h2 "LDTA Tools Challenge" ;
+
+p "
+The aim of the LDTA Tools Challenge is to foster a better
+understanding, among tool developers and tool users, of relative
+strengths and weaknesses of different language processing tool
+techniques as well as different implementations and realizations of
+those techniques.  Tool developers are invited to participate in the
+Tools Challenge and demonstrate their solution to the problems during
+a special session of LDTA 2011.
+" ;
+
+p {
+echo "
+The problems in the LDTA Tools Challenge Problem Set can be viewed as
+points in a two dimensional space: one dimension specifying language
+processing tasks and the second dimension specifying the set of
+languages to which these tasks are to be applied.  Along the task
+dimension are several traditional language processing tasks such as
+parsing, pretty printing, semantic analysis, optimization, and code
+generation. The language dimension is comprised of a simple, but
+evolving, suite of imperative programming languages. These two
+dimensions form a &quot;problem space&quot; in which various techniques and
+implementations will find problems in which they excel and others in
+which they find some challenges; no single technique or tool is
+expected to be optimal for all problems.  Thus, this is a &quot;challenge&quot;
+and not a competition; no winner is declared.  The full description of
+the problem set can be found in the LDTA Tools Challenge Problem Set
+document on the LDTA web page at ";
+a(href="http://www.ldta.info") "http://www.ldta.info";
+echo "." ;
+}
+
+p "
+The Tool Challenge is open to developers of all kinds of grammarware
+tools and techniques.  To participate, tool developers must submit the
+following by March 5, 2011.  Names of participants and the name of
+their tool or technique.  Presentation title and abstract.  The short
+abstract should specify on what aspects of the problem set the tool
+was applied, where it excelled and where no solution was offered
+and/or the solution was considered less than optimal.  We expect these
+to be only a few paragraphs in length.
+" ;
+
+p "
+This information is used for scheduling purposes only and is not used
+for evaluation; as all tool developers interested in participating are
+welcome and will be given an opportunity to present their solution at
+the workshop.  Submission of this information indicates a commitment
+to attend LDTA and to participate in the workshop.  This information
+will be listed in the program.
+" ;
+
+p "
+Authors of submissions that appear to be outside of the scope of LDTA
+will be contacted to discuss the relevance of their work to the
+workshop.  Of course tool developers who question whether their work
+falls with the scope of LDTA are encouraged to contact the PC chairs
+early on for clarification.
+" ;
+
+p "
+After the workshop a joint paper will be written by participants and
+submitted to a journal, most likely Science of Computer Programming.
+It is separate from the proceedings of the workshop and any special
+journal issue for the workshop.
+";
+
+
+end
+// end of Call for Papers
+
+
+def scope
+ h2 "Scope";
+
+ p {
+  echo "LDTA is an application and tool oriented forum on meta programming in a broad sense. A meta program is a program that takes other programs as input or output. The focus of LDTA is on generated or otherwise efficiently implemented meta programs, possibly using high level descriptions of programming languages. Tools and techniques presented at LDTA are usually applicable in the context of \"Language Workbenches\" or \"Meta Programming Systems\" or simply as parts of advanced programming environments or IDEs. The applications areas include, but are not limited to:";
+  ul {
+ li "Program analysis, transformation, generation and verification";
+ li "Implementation of Domain Specific Languages (both graphical and textual)";
+ li "Reverse engineering and reengineering";
+ li "Refactoring and other source-to-source transformations";
+ li "Application modelling (MDE, MDA, Software Factories, Software product lines)";
+ li "Grammar engineering / Grammarware";
+ li "Language definition and language prototyping";
+ li "Debugging, profiling and testing";
+ }
+ }
+
+ p {
+   echo "LDTA is a well-established workshop next to other conferences and workshops on (programming) language engineering topics such as ";
+   a(href="http://planet-sl.org/sle2009/") "SLE"; 
+   echo " and ";
+   a(href="http://www.gpce.org") "GPCE";
+   echo ". ";
+   echo "LDTA is traditionally a forum where computer science theories are put to the test of real-world software engineering issues, for example by applying:";
+  ul {
+ li "context-free grammars to parser generation for real programming languages,";
+ li "attribute grammars to static analyzer and compiler generation,";
+ li "term rewriting to source-to-source transformation,";
+ li "action semantics to programming language implementation,";
+ li "model checking to software verification.";
+ }
+
+ echo "Note that LDTA solicits submissions from any technological or theoretical domain, as long as the paper is within the application scope.";
+ }
+
+end
+
+def parTitle(title)
+ h1.title title;
+end
+
+def par 
+ div.entry {
+  yield;
+ }
+end
+
+def section(title) 
+  parTitle(title);
+  par yield;
+end
+
+def subtitle(title)
+  p.meta small title;
+end
+
+def main 
+html(xmlns='http://www.w3.org/1999/xhtml) {
+ 
+    head {
+     title "LDTA";
+     meta(http-equiv="content-type", content="text/html; charset=utf-8");
+     meta(name="keywords", content="Programming Debugging Language Descriptions Parsing Parsers Term Rewriting Attribute Grammars Functional Programming Debugging Model Driven Engineering Formal Methods Meta Programming");
+     meta(name="description", content="The International Workshop on Language Descriptions Tools and Applications");
+     meta(name="language", content="NL");
+     css("./style.css", "screen");
+     comment "Design by Free CSS Templates\nhttp://www.freecsstemplates.org\nReleased for free under a Creative Commons Attribution 2.5 License\n\nName       : Compressed \nDescription: A three-column, fixed-width template fit for 1024x768 screen resolutions.\nVersion    : 1.0\nReleased   : 20080524";
+    }
+
+    body {
+      div#logo h1.logo "Workshop on Language Descriptions, Tools, and Applications";
+      div#page {
+        div.sidebar#sidebar1 {
+         br; 
+         previous;
+        }
+
+      div#content div.bgtop div.bgbtm div.post content();
+
+    div.sidebar#sidebar2 {
+      br;
+      relatedLinks;
+    }
+   }
+    div(style="clear: both;") {
+      br;
+      div#footer p.legal "&copy;2007 All Rights Reserved. 
+      Design by <a(href="http://www.freecsstemplates.org/") "Free CSS Templates">";
+    }
+  }
+  }
+end

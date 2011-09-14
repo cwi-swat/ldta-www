@@ -16,9 +16,9 @@ end
 
 
 def temporaryContent
- p "12th International Workshop on Language Descriptions, Tools, 
+ p "11th International Workshop on Language Descriptions, Tools, 
     and Applications" ;
- p "Tallinn, Estonia; March 31 - April 1, 2012; an ETAPS workshop" ;
+ p "Saarbr&uuml;cken, Germany; March 26 & 27, 2011; an ETAPS workshop" ;
  p "Call for Papers to be published soon.";
 end
 
@@ -27,12 +27,12 @@ def callForPapers
  section("Call for Papers and Tool Challenge Submissions") { 
 
  p "
-                    12th International Workshop on
+                    11th International Workshop on
             Language Descriptions, Tools, and Applications
    ";
  p "
-                           Tallinn, Estonia
-                       March 31 - April 1, 2012
+                         Saarbr&uuml;cken, Germany
+                          March 26 & 27, 2011
                            an ETAPS workshop
    ";
 
