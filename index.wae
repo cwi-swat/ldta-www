@@ -37,6 +37,18 @@ end
 def updates
 section("News and updates") {
 ul {
+ li { echo "Sep. 14, 2011:"; br;
+      echo "The deadlines for LDTA 2012 have been settled:";
+      br;
+      ul {
+        li "Abstract submission: Nov. 28, 2011" ;
+        li "Full paper submission: Dec. 5, 2011" ;
+        li "Author notification: Jan. 20, 2012" ;
+        li "Tool challenge submission: Mar. 04, 2012" ;
+        li "Camera-ready papers: Feb. 5, 2012" ;
+      }
+ }
+ 
  li { echo "Mar. 17, 2011:"; br;
       echo "The LDTA 2011 program with times for talks and Tool " ;
       echo "Challenge presentations is available " ; 
